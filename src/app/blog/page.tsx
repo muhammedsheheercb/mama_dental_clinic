@@ -5,8 +5,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "Our Blogs | Firstooth Dental Studio | Thrissur",
-  description: "Stay updated with the latest dental tips, clinical advice, and cosmetic dentistry breakthroughs from the professionals at Firstooth Dental Studio.",
+  title: "Our Blogs | MAMA Dental Clinic & Orthodontic Centre | Pazhanji, Kerala",
+  description: "Stay updated with the latest dental tips, clinical advice, and orthodontic breakthroughs from Dr. Minu and the team at MAMA Dental Clinic.",
 };
 
 export default function BlogPage() {

@@ -2,8 +2,8 @@ import React from "react";
 import ServicePageTemplate from "../components/ServicePageTemplate";
 
 export const metadata = {
-  title: "Laser Gum Contouring | Thrissur | Firstooth Dental Studio",
-  description: "Correct a gummy smile or uneven gumline with precise laser gum contouring at Firstooth Dental Studio. Painless treatment in Thrissur.",
+  title: "Laser Gum Contouring | Pazhanji | MAMA Dental Clinic",
+  description: "Correct a gummy smile or uneven gumline with precise laser gum contouring at MAMA Dental Clinic. Painless treatment in Pazhanji.",
 };
 
 export default function GumContouringPage() {
@@ -90,7 +90,7 @@ export default function GumContouringPage() {
     <ServicePageTemplate
       title="Gum Contouring"
       heroImage="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&q=80&w=1200"
-      heroAlt="Firstooth Dental Studio Gum Contouring"
+      heroAlt="MAMA Dental Clinic Gum Contouring"
       cards={cards}
     />
   );

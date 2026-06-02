@@ -5,20 +5,12 @@ import { Users } from "lucide-react";
 export default function Team() {
   const members = [
     {
-      name: "Dr. Saipriya N",
-      role: "Co-founder & Chief Executive Officer",
-      education: "BDS, Fellowship in Cosmetology",
-      bio: "Dr. Saipriya N guides the vision and clinical operations of Firstooth. Combining dental science with aesthetic expertise, she has established the studio as Thrissur's premier destination for personalized cosmetic dental solutions, creating a nurturing and state-of-the-art environment for patient transformations.",
-      details: "With a BDS and advanced fellowship in cosmetology, Dr. Saipriya blends clinical precision with facial aesthetics. Her vision centers on patient empowerment through education, quality assurance, ethical practice, and local community health initiatives.",
-      image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=400",
-    },
-    {
-      name: "Vishnu R Das",
-      role: "Co-founder & Chief Strategy Officer",
-      education: "BTech, MBA in Marketing & Operations",
-      bio: "Vishnu R Das drives the strategic direction and innovative service models at Firstooth. Inspired to create a healthcare studio that embodies artistry and digital innovation, he oversees business operations, client relation programs, and patient-centered tech integration.",
-      details: "Holding an engineering degree and a marketing MBA, Vishnu coordinates our advanced digital workflow, ensuring smooth visits, scheduling convenience, and modern 3D aligner manufacturing infrastructure.",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400",
+      name: "Dr. Minu C. Mathews",
+      role: "Chief Orthodontist & Clinical Director",
+      education: "BDS, MDS (Orthodontics and Dentofacial Orthopedics)",
+      bio: "Dr. Minu C. Mathews guides the vision and clinical operations of MAMA Dental Clinic & Orthodontic Centre. Combining advanced orthodontic science with aesthetic expertise, she has established the clinic as Pazhanji's premier destination for comprehensive dental care and smile corrections.",
+      details: "With specialized expertise in modern braces and clear aligners, Dr. Minu leverages advanced digital diagnostics (including digital X-rays and intraoral 3D scanning) to ensure precise, comfortable, and personalized treatment results for patients of all ages.",
+      image: "https://images.unsplash.com/photo-1594824813573-246434de83fb?auto=format&fit=crop&q=80&w=600",
     },
   ];
 
@@ -28,17 +20,17 @@ export default function Team() {
         <div className="section-title-wrapper">
           <div className="subtitle-badge">
             <Users size={16} />
-            <span>Meet Our Leadership</span>
+            <span>Meet Our Orthodontist</span>
           </div>
           <h2 className="section-title">
-            The visionaries behind <span>Firstooth.</span>
+            Led by <span>Dr. Minu.</span>
           </h2>
           <p className="section-description">
-            Our founders bring together dental cosmetic science and operational innovation to redefine the dental care experience in Kerala.
+            Dr. Minu brings together advanced dental science and specialized orthodontic expertise to redefine the dental care experience in Pazhanji, Kerala.
           </p>
         </div>
 
-        <div className="team-grid">
+        <div className="team-grid" style={{ gridTemplateColumns: "1fr", maxWidth: "800px", margin: "0 auto" }}>
           {members.map((member, index) => (
             <div key={index} className="team-card">
               {/* Avatar Column */}
@@ -48,7 +40,7 @@ export default function Team() {
                   alt={member.name}
                   fill
                   style={{ objectFit: "cover" }}
-                  sizes="(max-width: 1200px) 100vw, 20vw"
+                  sizes="(max-width: 1200px) 100vw, 30vw"
                 />
               </div>
 

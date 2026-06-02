@@ -2,22 +2,27 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Premium Clean Aligners | Thrissur | Firstooth Dental Studio",
-  description: "Achieve your perfect smile discreetly with Firstooth Dental Studio's custom clear aligners. Medical-grade, invisible orthodontic braces in Thrissur, Kerala. Start your journey with personalized care today!",
-  keywords: "clear aligners, invisible braces, teeth straightening, cosmetic dentistry, Firstooth Thrissur, orthodontic treatment, Invisalign Kerala, dental clinic Kerala, dental studio, cosmetic smile correction",
-  authors: [{ name: "Firstooth Dental Studio" }],
+  title: "MAMA Dental Clinic & Orthodontic Centre | Pazhanji, Kerala",
+  icons: {
+    icon: "/images/logo.webp",
+    shortcut: "/images/logo.webp",
+    apple: "/images/logo.webp",
+  },
+  description: "MAMA Dental Clinic and Orthodontic Centre by Dr. Minu offers comprehensive and advanced dental care in Pazhanji, Kerala. Specializing in orthodontic treatment, braces, clear aligners, smile designing, and dental implants.",
+  keywords: "MAMA Dental Clinic, Dr. Minu, orthodontic treatment, clear aligners, braces, smile correction, cosmetic dentistry, root canal treatment, kids dentistry, oral surgery, dental implants, dentures, dental bridges, digital X-rays, oral scanning, dental clinic Pazhanji, Thrissur Kerala",
+  authors: [{ name: "MAMA Dental Clinic and Orthodontic Centre" }],
   openGraph: {
-    title: "Premium Clean Aligners | Firstooth Dental Studio",
-    description: "Get the smile you've always wanted without the metal braces. Discover custom-made, invisible clear aligners crafted with precision technology at Firstooth Dental Studio in Thrissur.",
-    url: "https://firstooth.com/clean-aligners/",
-    siteName: "Firstooth Dental Studio",
+    title: "MAMA Dental Clinic & Orthodontic Centre by Dr. Minu",
+    description: "Experience comprehensive and advanced dental care for all age groups at MAMA Dental Clinic in Pazhanji, Kerala. Led by Orthodontist Dr. Minu.",
+    url: "https://mamadentalclinic.com",
+    siteName: "MAMA Dental Clinic and Orthodontic Centre",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Premium Clean Aligners | Firstooth Dental Studio",
-    description: "Experience modern teeth straightening with clear, comfortable, and invisible orthodontic aligners from Firstooth Dental Studio.",
+    title: "MAMA Dental Clinic & Orthodontic Centre",
+    description: "Experience modern, comfortable, and pain-free dental care at MAMA Dental Clinic in Pazhanji, Kerala.",
   },
   robots: {
     index: true,

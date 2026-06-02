@@ -168,7 +168,7 @@ export default function HomeStudent() {
             borderRadius: "100px",
             display: "inline-block",
           }}>
-            AT FIRSTOOTH
+            AT MAMA DENTAL
           </span>
         </div>
 

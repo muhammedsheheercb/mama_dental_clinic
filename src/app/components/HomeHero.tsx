@@ -8,7 +8,7 @@ export default function HomeHero() {
       {/* Guarantees to load - high quality smiling portrait */}
       <Image
         src="/images/hero.webp"
-        alt="Because Smile Matters - Confident, beautiful smile at Firstooth Dental Studio"
+        alt="Because Smile Matters - Confident, beautiful smile at MAMA Dental Clinic & Orthodontic Centre"
         fill
         priority
         className="home-hero-bg-image"

@@ -35,7 +35,7 @@ export default function ServicePageTemplate({
 }: ServicePageProps) {
   const [activeCardIdx, setActiveCardIdx] = useState<number | null>(null);
   
-  // Custom strengths for "Why Firstooth is the Best" (matching Screenshot 3)
+  // Custom strengths for "Why MAMA Dental is the Best" (matching Screenshot 3)
   const strengths = [
     {
       icon: <Heart size={24} style={{ color: "#00acee" }} />,
@@ -170,11 +170,11 @@ export default function ServicePageTemplate({
           </div>
         </section>
 
-        {/* Section 3: Why Firstooth is the Best */}
+        {/* Section 3: Why MAMA Dental is the Best */}
         <section className="service-best-section" style={{ padding: "60px 0 100px 0", backgroundColor: "#ffffff" }}>
           <div className="service-container">
             <h2 className="service-section-title" style={{ fontSize: "2.4rem", fontWeight: "700", color: "#1e3a44", marginBottom: "40px", fontFamily: "var(--font-serif)" }}>
-              Why Firstooth is the Best
+              Why MAMA Dental is the Best
             </h2>
 
             {/* Strengths Cards Grid */}

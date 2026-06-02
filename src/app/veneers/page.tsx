@@ -2,8 +2,8 @@ import React from "react";
 import ServicePageTemplate from "../components/ServicePageTemplate";
 
 export const metadata = {
-  title: "Premium Porcelain Veneers | Thrissur | Firstooth Dental Studio",
-  description: "Transform your smile with premium custom veneers at Firstooth Dental Studio. Fix chips, gaps, and stains in Thrissur, Kerala.",
+  title: "Premium Porcelain Veneers | Pazhanji, Kerala | MAMA Dental Clinic",
+  description: "Transform your smile with premium custom veneers at MAMA Dental Clinic. Fix chips, gaps, and stains in Pazhanji, Kerala.",
 };
 
 export default function VeneersPage() {
@@ -90,7 +90,7 @@ export default function VeneersPage() {
     <ServicePageTemplate
       title="Veneers"
       heroImage="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      heroAlt="Firstooth Dental Studio Veneers Shade Matching"
+      heroAlt="MAMA Dental Clinic Veneers Shade Matching"
       cards={cards}
     />
   );

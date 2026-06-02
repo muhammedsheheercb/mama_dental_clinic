@@ -4,8 +4,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "About Us | Firstooth Dental Studio | Thrissur",
-  description: "Learn more about Firstooth Dental Studio. Founded in 2020, we are a cosmetic dental studio focused on transforming smiles with personalised care.",
+  title: "About Us | MAMA Dental Clinic & Orthodontic Centre | Pazhanji, Kerala",
+  description: "Learn more about MAMA Dental Clinic & Orthodontic Centre. Led by Dr. Minu, we offer comprehensive and advanced dental care in Pazhanji, Kerala.",
 };
 
 export default function AboutPage() {
@@ -13,7 +13,7 @@ export default function AboutPage() {
     {
       id: 1,
       value: "1K+",
-      label: "Smiles transformed at FIRSTOOTH",
+      label: "Smiles transformed at MAMA DENTAL",
       date: "As of Dec 30, 2024",
     },
     {
@@ -58,7 +58,7 @@ export default function AboutPage() {
             >
               <Image
                 src="/images/about.webp"
-                alt="Firstooth Dental Studio Collaborating Team"
+                alt="MAMA Dental Clinic & Orthodontic Centre Collaborating Team"
                 fill
                 priority
                 style={{ objectFit: "cover" }}
@@ -96,9 +96,10 @@ export default function AboutPage() {
                   maxWidth: "1000px"
                 }}
               >
-                FIRSTOOTH was born in 2020, a cosmetic dental studio focused on transforming smiles with personalised care.
-                Combining technology and artistry, we offer innovative treatments designed to enhance your natural beauty and boost
-                confidence. At FIRSTOOTH, every smile is special, and we're here to help you shine – Because smile matters.
+                MAMA Dental Clinic and Orthodontic Centre by Dr. Minu offers comprehensive and advanced dental care for patients of all age groups. 
+                Led by Dr. Minu, the clinic specializes in orthodontic treatment including braces and clear aligners, providing effective and personalized solutions for smile correction. 
+                Our wide range of services includes smile designing, cosmetic dentistry, root canal treatment, kids dentistry, oral surgery, dental implants, dentures, and dental bridges. 
+                We use advanced digital technology, such as digital X-rays and oral scanning, to ensure accurate diagnosis, precise treatment planning, and efficient care. At MAMA Dental Clinic, every smile is special, and we're here to help you shine – Because smile matters.
               </p>
             </div>
           </div>

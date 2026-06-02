@@ -2,8 +2,8 @@ import React from "react";
 import ServicePageTemplate from "../components/ServicePageTemplate";
 
 export const metadata = {
-  title: "Orthodontic Braces | Thrissur | Firstooth Dental Studio",
-  description: "Achieve straight, healthy teeth with modern orthodontic braces at Firstooth Dental Studio. Expert care in Thrissur, Kerala.",
+  title: "Orthodontic Braces | Pazhanji, Kerala | MAMA Dental Clinic",
+  description: "Achieve straight, healthy teeth with modern orthodontic braces at MAMA Dental Clinic. Expert care in Pazhanji, Kerala by Orthodontist Dr. Minu.",
 };
 
 export default function BracesPage() {
@@ -90,7 +90,7 @@ export default function BracesPage() {
     <ServicePageTemplate
       title="Braces"
       heroImage="https://images.unsplash.com/photo-1720685193964-4529228a33c1?auto=format&fit=crop&q=80&w=1200"
-      heroAlt="Firstooth Dental Studio Orthodontic Braces"
+      heroAlt="MAMA Dental Clinic Orthodontic Braces"
       cards={cards}
     />
   );

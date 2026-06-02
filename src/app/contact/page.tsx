@@ -5,8 +5,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "Contact Us | Firstooth Dental Studio | Thrissur",
-  description: "Get in touch with Firstooth Dental Studio. Reach out to schedule a consultation or ask our specialists any questions. Safa Tower, Punkunnam, Thrissur, Kerala.",
+  title: "Contact Us | MAMA Dental Clinic & Orthodontic Centre | Pazhanji, Kerala",
+  description: "Get in touch with MAMA Dental Clinic and Orthodontic Centre in Pazhanji, Kerala. Reach out to schedule a consultation or ask Dr. Minu and our orthodontics team any questions.",
 };
 
 export default function ContactPage() {
@@ -48,7 +48,7 @@ export default function ContactPage() {
               >
                 <Image
                   src="/images/contact.webp"
-                  alt="Firstooth Dental Studio Clinic Lounge"
+                  alt="MAMA Dental Clinic & Orthodontic Centre Lounge"
                   fill
                   priority
                   style={{ objectFit: "cover" }}
@@ -74,7 +74,7 @@ export default function ContactPage() {
                       <div>
                         <h4 style={{ fontSize: "0.95rem", fontWeight: "700", color: "#1e293b", margin: "0 0 4px 0" }}>Location</h4>
                         <p style={{ fontSize: "0.95rem", color: "#64748b", margin: 0, lineHeight: "1.5" }}>
-                          Second Floor, Safa Tower, Guruvayur Rd,<br />Punkunnam, Thrissur, Kerala 680002
+                          M3P3+X23, Main Road,<br />Pazhanji, Kerala 680542
                         </p>
                       </div>
                     </div>
@@ -86,7 +86,7 @@ export default function ContactPage() {
                       <div>
                         <h4 style={{ fontSize: "0.95rem", fontWeight: "700", color: "#1e293b", margin: "0 0 4px 0" }}>Phone Number</h4>
                         <p style={{ fontSize: "0.95rem", color: "#64748b", margin: 0 }}>
-                          <a href="tel:+918089099990" style={{ color: "#64748b", textDecoration: "none" }}>+91 80890 99990</a>
+                          <a href="tel:+919048054405" style={{ color: "#64748b", textDecoration: "none" }}>+91 90480 54405</a>
                         </p>
                       </div>
                     </div>
@@ -98,7 +98,7 @@ export default function ContactPage() {
                       <div>
                         <h4 style={{ fontSize: "0.95rem", fontWeight: "700", color: "#1e293b", margin: "0 0 4px 0" }}>Email Address</h4>
                         <p style={{ fontSize: "0.95rem", color: "#64748b", margin: 0 }}>
-                          <a href="mailto:firstoothaesthetics@gmail.com" style={{ color: "#64748b", textDecoration: "none" }}>firstoothaesthetics@gmail.com</a>
+                          <a href="mailto:mamapazhanji@gmail.com" style={{ color: "#64748b", textDecoration: "none" }}>mamapazhanji@gmail.com</a>
                         </p>
                       </div>
                     </div>
@@ -110,7 +110,7 @@ export default function ContactPage() {
                       <div>
                         <h4 style={{ fontSize: "0.95rem", fontWeight: "700", color: "#1e293b", margin: "0 0 4px 0" }}>Office Hours</h4>
                         <p style={{ fontSize: "0.95rem", color: "#64748b", margin: 0, lineHeight: "1.5" }}>
-                          Mon - Sat: 9:30 AM - 7:30 PM<br />Sunday: By Appointment Only
+                          Mon - Sat: 8:00 AM - 8:00 PM<br />Sunday: Closed
                         </p>
                       </div>
                     </div>
@@ -132,7 +132,7 @@ export default function ContactPage() {
                   }}
                 >
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3922.3789498275525!2d76.20015947596008!3d10.549429789589887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7ee46d03cf819%3A0xe54d4f82664972be!2sFirstooth%20Dental%20Studio!5e0!3m2!1sen!2sin!4v1717316000000!5m2!1sen!2sin"
+                    src="https://maps.google.com/maps?q=MAMA%20Dental%20Clinic%20and%20Orthodontic%20Centre,%20Pazhanji,%20Kerala&t=&z=16&ie=UTF8&iwloc=&output=embed"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { ChevronDown, X, Sparkles } from "lucide-react";
 
@@ -39,12 +40,17 @@ export default function Header() {
       <header className={`header ${scrolled ? "scrolled" : ""}`}>
         <div className="container header-content">
           {/* Logo */}
-          <Link href="/" className="logo-wrapper">
-            <div className="icon-badge" style={{ width: "36px", height: "36px", color: "var(--primary)" }}>
-              <Sparkles size={20} />
-            </div>
-            <span className="logo-text">
-              FIRSTOOTH<span>.</span>
+          <Link href="/" className="logo-wrapper" style={{ display: "flex", alignItems: "center", gap: "10px", textDecoration: "none" }}>
+            <Image
+              src="/images/logo.webp"
+              alt="MAMA Dental Clinic Logo"
+              width={38}
+              height={38}
+              style={{ objectFit: "contain", borderRadius: "6px" }}
+              priority
+            />
+            <span className="logo-text" style={{ fontSize: "1.35rem", fontWeight: "800", color: "#1e3a44", letterSpacing: "-0.01em" }}>
+              MAMA DENTAL<span>.</span>
             </span>
           </Link>
 

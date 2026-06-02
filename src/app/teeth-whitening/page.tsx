@@ -2,8 +2,8 @@ import React from "react";
 import ServicePageTemplate from "../components/ServicePageTemplate";
 
 export const metadata = {
-  title: "Professional Teeth Whitening | Thrissur | Firstooth Dental Studio",
-  description: "Get a brighter, whiter smile with professional teeth whitening treatments at Firstooth Dental Studio. Fast and safe in Thrissur, Kerala.",
+  title: "Professional Teeth Whitening | Pazhanji | MAMA Dental Clinic",
+  description: "Get a brighter, whiter smile with professional teeth whitening treatments at MAMA Dental Clinic. Fast and safe in Pazhanji, Kerala.",
 };
 
 export default function TeethWhiteningPage() {
@@ -90,7 +90,7 @@ export default function TeethWhiteningPage() {
     <ServicePageTemplate
       title="Teeth Whitening"
       heroImage="https://images.unsplash.com/photo-1677026010083-78ec7f1b84ed?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      heroAlt="Firstooth Dental Studio Teeth Whitening"
+      heroAlt="MAMA Dental Clinic Professional Teeth Whitening"
       cards={cards}
     />
   );

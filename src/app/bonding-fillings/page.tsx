@@ -2,8 +2,8 @@ import React from "react";
 import ServicePageTemplate from "../components/ServicePageTemplate";
 
 export const metadata = {
-  title: "Cosmetic Bonding & Fillings | Thrissur | Firstooth Dental Studio",
-  description: "Repair chipped, decayed, or discolored teeth with composite bonding and white fillings at Firstooth Dental Studio in Thrissur, Kerala.",
+  title: "Composite Bonding & Fillings | Pazhanji | MAMA Dental Clinic",
+  description: "Repair minor decay, chips, or gaps with tooth-colored composite bonding and fillings at MAMA Dental Clinic in Pazhanji, Kerala.",
 };
 
 export default function BondingFillingsPage() {
@@ -90,7 +90,7 @@ export default function BondingFillingsPage() {
     <ServicePageTemplate
       title="Bonding & Filling"
       heroImage="https://images.unsplash.com/photo-1606811951341-756fdd437682?auto=format&fit=crop&q=80&w=1200"
-      heroAlt="Firstooth Dental Studio Bonding & Filling"
+      heroAlt="MAMA Dental Clinic Composite Bonding & Fillings"
       cards={cards}
     />
   );

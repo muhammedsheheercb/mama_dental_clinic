@@ -19,7 +19,7 @@ export default function Hero() {
           </h1>
           
           <p className="hero-description">
-            Experience the freedom of clear orthodontic correction. Firstooth Clean Aligners are custom-made, virtually invisible, and easily removable—giving you a flawless smile comfortably and confidently.
+            Experience the freedom of clear orthodontic correction. MAMA Clean Aligners are custom-made, virtually invisible, and easily removable—giving you a flawless smile comfortably and confidently.
           </p>
 
           <div className="hero-ctas">
@@ -53,7 +53,7 @@ export default function Hero() {
           <div className="hero-image-container">
             <Image
               src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=800"
-              alt="Confident, beautiful smile with Firstooth Clean Aligners"
+              alt="Confident, beautiful smile with MAMA Clean Aligners"
               fill
               priority
               style={{ objectFit: "cover" }}
@@ -67,7 +67,7 @@ export default function Hero() {
               <ShieldCheck size={20} />
             </div>
             <div className="floating-card-text">
-              <p>Firstooth Quality</p>
+              <p>MAMA Quality</p>
               <h5>Medical-Grade</h5>
             </div>
           </div>

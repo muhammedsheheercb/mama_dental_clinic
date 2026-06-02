@@ -6,7 +6,7 @@ export default function Assurance() {
   const points = [
     {
       title: "Customised Treatment Plans",
-      description: "At Firstooth, we design clear aligner treatments that are personalised to your unique dental needs. Every step of the process is customised, from the initial consultation to the final retainer, ensuring your teeth are aligned safely and effectively.",
+      description: "At MAMA Dental Clinic, we design clear aligner treatments that are personalised to your unique dental needs. Every step of the process is customised, from the initial consultation to the final retainer, ensuring your teeth are aligned safely and effectively.",
       icon: <Award size={20} />,
     },
     {
@@ -27,7 +27,7 @@ export default function Assurance() {
         {/* Left Column - Assurance List */}
         <div className="assurance-content">
           <div className="subtitle-badge" style={{ backgroundColor: "rgba(46, 196, 182, 0.15)", color: "var(--secondary)", border: "1px solid rgba(46, 196, 182, 0.3)" }}>
-            <span>Firstooth Assurance</span>
+            <span>MAMA Dental Assurance</span>
           </div>
           <h2 className="section-title" style={{ textAlign: "left", margin: "0 0 24px 0" }}>
             Tailored care, <span>lasting results.</span>
@@ -56,7 +56,7 @@ export default function Assurance() {
           <div className="assurance-image-container">
             <Image
               src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=800"
-              alt="Experienced, welcoming dental professional at Firstooth Dental Studio"
+              alt="Experienced, welcoming dental professional at MAMA Dental Clinic"
               fill
               style={{ objectFit: "cover" }}
               sizes="(max-width: 1024px) 100vw, 45vw"

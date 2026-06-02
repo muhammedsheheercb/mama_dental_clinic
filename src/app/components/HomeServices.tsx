@@ -27,7 +27,7 @@ export default function HomeServices() {
           <div className="service-banner-full" style={{ borderRadius: 0, position: "relative" }}>
             <Image
               src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=1200"
-              alt="Firstooth Veneers matching shade selector tool"
+              alt="MAMA Dental Veneers matching shade selector tool"
               fill
               priority
               className="home-hero-bg-image"

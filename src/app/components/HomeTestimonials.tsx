@@ -10,19 +10,19 @@ export default function HomeTestimonials() {
     },
     {
       name: "Rahul",
-      review: "I was hesitant about aligners, but Firstooth made everything simple. The consultation was informative, and I got to choose the best plan for me. No unnecessary costs, just honest advice. The aligners are comfortable, and my smile is already transforming!",
+      review: "I was hesitant about aligners, but MAMA Dental Clinic made everything simple. The consultation was informative, and I got to choose the best plan for me. No unnecessary costs, just honest advice. The aligners are comfortable, and my smile is already transforming!",
     },
     {
       name: "Sneha",
-      review: "My teeth have never looked this bright! The whitening session at Firstooth was quick, painless, and super effective. Dr. Saipriya and the team made sure I was comfortable throughout. The results are amazing, and I left with a confident smile!",
+      review: "My teeth have never looked this bright! The whitening session at MAMA Dental Clinic was quick, painless, and super effective. Dr. Minu and the team made sure I was comfortable throughout. The results are amazing, and I left with a confident smile!",
     },
     {
       name: "Nikhil P",
-      review: "Getting braces at Firstooth was one of the best decisions I've made! The process was easy, and the team made every visit comfortable. Doctor was always reassuring, and I'm loving how my teeth are shaping up!",
+      review: "Getting braces at MAMA Dental Clinic was one of the best decisions I've made! The process was easy, and the team made every visit comfortable. The doctor was always reassuring, and I'm loving how my teeth are shaping up!",
     },
     {
       name: "Hari Prasad",
-      review: "I always wanted a perfect smile, and Firstooth made it possible with veneers. Dr. Saipriya explained everything clearly, without pressure to choose expensive treatments. They provided all options, and I chose what suited me best. Love the results!",
+      review: "I always wanted a perfect smile, and MAMA Dental Clinic made it possible with veneers. Dr. Minu explained everything clearly, without pressure to choose expensive treatments. They provided all options, and I chose what suited me best. Love the results!",
     },
     {
       name: "Sandhya Nair",
@@ -30,7 +30,7 @@ export default function HomeTestimonials() {
     },
     {
       name: "Jithin Mathew",
-      review: "Highly professional dental clinic in Thrissur. The advanced intraoral scanning technology they use is impressive. No messy molds, just instant digital maps. Fast, clean, and extremely comfortable clear aligner treatment.",
+      review: "Highly professional dental clinic in Pazhanji. The advanced intraoral scanning technology they use is impressive. No messy molds, just instant digital maps. Fast, clean, and extremely comfortable clear aligner treatment.",
     },
     {
       name: "Anupama Kurian",

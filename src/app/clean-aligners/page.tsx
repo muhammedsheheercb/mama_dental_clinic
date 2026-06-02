@@ -2,8 +2,8 @@ import React from "react";
 import ServicePageTemplate from "../components/ServicePageTemplate";
 
 export const metadata = {
-  title: "Premium Clean Aligners | Thrissur | Firstooth Dental Studio",
-  description: "Achieve your perfect smile discreetly with Firstooth Dental Studio's custom clear aligners. Medical-grade, invisible orthodontic braces in Thrissur, Kerala.",
+  title: "Premium Clean Aligners | Pazhanji, Kerala | MAMA Dental Clinic",
+  description: "Achieve your perfect smile discreetly with MAMA Dental Clinic's custom clear aligners. Medical-grade, invisible orthodontic braces in Pazhanji, Kerala.",
 };
 
 export default function CleanAlignersPage() {
@@ -90,7 +90,7 @@ export default function CleanAlignersPage() {
     <ServicePageTemplate
       title="Clean Aligners"
       heroImage="https://images.unsplash.com/photo-1609840113929-b130355987e1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      heroAlt="Firstooth Dental Studio Premium Clean Aligners"
+      heroAlt="MAMA Dental Clinic Premium Clean Aligners"
       cards={cards}
     />
   );

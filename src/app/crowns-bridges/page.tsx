@@ -2,8 +2,8 @@ import React from "react";
 import ServicePageTemplate from "../components/ServicePageTemplate";
 
 export const metadata = {
-  title: "Crowns & Bridges | Thrissur | Firstooth Dental Studio",
-  description: "Restore damaged or missing teeth with custom crowns and bridges at Firstooth Dental Studio. Natural-looking restorations in Thrissur.",
+  title: "Crowns & Bridges | Pazhanji, Kerala | MAMA Dental Clinic",
+  description: "Restore damaged or missing teeth with custom crowns and bridges at MAMA Dental Clinic. Natural-looking restorations in Pazhanji, Kerala.",
 };
 
 export default function CrownsBridgesPage() {
@@ -90,7 +90,7 @@ export default function CrownsBridgesPage() {
     <ServicePageTemplate
       title="Crowns & Bridges"
       heroImage="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&q=80&w=1200"
-      heroAlt="Firstooth Dental Studio Crowns & Bridges"
+      heroAlt="MAMA Dental Clinic Crowns & Bridges"
       cards={cards}
     />
   );

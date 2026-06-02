@@ -64,7 +64,7 @@ export default function AppointmentForm() {
             Am I a candidate? <span>Book a consultation.</span>
           </h2>
           <p className="section-description">
-            Tell us about your dental goals, select your preferred date, and our clinic specialists in Thrissur will get in touch with you.
+            Tell us about your dental goals, select your preferred date, and our clinic specialists in Pazhanji will get in touch with you.
           </p>
         </div>
 
@@ -153,7 +153,7 @@ export default function AppointmentForm() {
                       <span style={{ fontSize: "0.85rem", fontWeight: "600", color: "var(--secondary)" }}>Step 2 of 2</span>
                     </div>
                     <p style={{ marginBottom: "32px" }}>
-                      Enter your details below to schedule your diagnostic 3D intraoral scan at Firstooth.
+                      Enter your details below to schedule your diagnostic 3D intraoral scan at MAMA Dental Clinic.
                     </p>
 
                     <div className="form-grid">
@@ -279,7 +279,7 @@ export default function AppointmentForm() {
                   </div>
                   <div className="bullet-text">
                     <h4>Consultation with Orthodontist</h4>
-                    <p>1-on-1 detailed oral analysis with Dr. Saipriya N and our cosmetology specialist team.</p>
+                    <p>1-on-1 detailed oral analysis with Dr. Minu and our orthodontics specialist team.</p>
                   </div>
                 </div>
 

@@ -6,8 +6,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "Our Locations | Firstooth Dental Studio | Thrissur & Ernakulam",
-  description: "Find a Firstooth Dental Studio branch near you. Visit our state-of-the-art dental clinic in Punkunnam, Thrissur or learn about our upcoming branch in Ernakulam, Kerala.",
+  title: "Our Location | MAMA Dental Clinic & Orthodontic Centre | Pazhanji, Kerala",
+  description: "Find MAMA Dental Clinic and Orthodontic Centre near you. Visit our state-of-the-art clinic in Pazhanji, Kerala. Led by Orthodontist Dr. Minu.",
 };
 
 export default function LocationPage() {
@@ -26,14 +26,15 @@ export default function LocationPage() {
             </h1>
 
             {/* 2-Column Branches Card Grid */}
-            <div className="location-grid" style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "30px", marginBottom: "80px" }}>
+            {/* Single Branch Card centered */}
+            <div className="location-grid" style={{ display: "grid", gridTemplateColumns: "1fr", gap: "30px", marginBottom: "80px", maxWidth: "800px", margin: "0 auto 80px auto" }}>
               
-              {/* Branch 1: Punkunnam, Thrissur */}
+              {/* Branch 1: Pazhanji, Kerala */}
               <div 
                 className="location-card" 
                 style={{ 
                   position: "relative", 
-                  height: "460px", 
+                  height: "480px", 
                   borderRadius: "24px", 
                   overflow: "hidden", 
                   boxShadow: "0 15px 35px rgba(0,0,0,0.06)",
@@ -45,11 +46,11 @@ export default function LocationPage() {
                 {/* Background Image */}
                 <Image
                   src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800"
-                  alt="Firstooth Dental Studio Punkunnam Lounge Area"
+                  alt="MAMA Dental Clinic & Orthodontic Centre Pazhanji"
                   fill
                   priority
                   style={{ objectFit: "cover" }}
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  sizes="(max-width: 768px) 100vw, 80vw"
                 />
                 
                 {/* Gradient Overlay for Legibility */}
@@ -58,69 +59,15 @@ export default function LocationPage() {
                 {/* Text Content Overlay */}
                 <div style={{ position: "relative", zIndex: 2, padding: "40px", display: "flex", flexDirection: "column", gap: "10px" }}>
                   <h2 style={{ fontSize: "2rem", fontWeight: "800", color: "#ffffff", margin: 0, fontFamily: "var(--font-serif)" }}>
-                    Punkunnam, Thrissur
+                    Pazhanji, Kerala
                   </h2>
-                  <p style={{ fontSize: "1rem", color: "#e2e8f0", margin: 0, lineHeight: "1.5", maxWidth: "420px" }}>
-                    Second Floor, Safa Tower, Guruvayur Rd, Punkunnam, Thrissur, Kerala 680002
+                  <p style={{ fontSize: "1rem", color: "#e2e8f0", margin: 0, lineHeight: "1.5", maxWidth: "520px" }}>
+                    M3P3+X23, Main Road, Pazhanji, Kerala 680542
                   </p>
                   <a 
-                    href="https://maps.google.com/?q=Firstooth+Dental+Studio+Punkunnam" 
+                    href="https://share.google/IYBJ7i53KJ7Tmw4lS" 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="location-link"
-                    style={{ 
-                      fontSize: "1.1rem", 
-                      fontWeight: "700", 
-                      color: "#00acee", 
-                      textDecoration: "none", 
-                      display: "inline-flex", 
-                      alignItems: "center", 
-                      gap: "6px",
-                      marginTop: "5px",
-                      transition: "color 0.2s ease"
-                    }}
-                  >
-                    Get directions <ArrowRight size={18} />
-                  </a>
-                </div>
-              </div>
-
-              {/* Branch 2: Ernakulam */}
-              <div 
-                className="location-card" 
-                style={{ 
-                  position: "relative", 
-                  height: "460px", 
-                  borderRadius: "24px", 
-                  overflow: "hidden", 
-                  boxShadow: "0 15px 35px rgba(0,0,0,0.06)",
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "flex-end"
-                }}
-              >
-                {/* Background Image */}
-                <Image
-                  src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&q=80&w=800"
-                  alt="Firstooth Dental Studio Ernakulam Upcoming Branch"
-                  fill
-                  style={{ objectFit: "cover" }}
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-                
-                {/* Gradient Overlay for Legibility */}
-                <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0) 100%)", zIndex: 1 }} />
-
-                {/* Text Content Overlay */}
-                <div style={{ position: "relative", zIndex: 2, padding: "40px", display: "flex", flexDirection: "column", gap: "10px" }}>
-                  <h2 style={{ fontSize: "2rem", fontWeight: "800", color: "#ffffff", margin: 0, fontFamily: "var(--font-serif)" }}>
-                    Ernakulam
-                  </h2>
-                  <p style={{ fontSize: "1rem", color: "#e2e8f0", margin: 0, lineHeight: "1.5" }}>
-                    Coming Soon
-                  </p>
-                  <a 
-                    href="#" 
                     className="location-link"
                     style={{ 
                       fontSize: "1.1rem", 
