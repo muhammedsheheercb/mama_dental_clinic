@@ -6,8 +6,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "Our Location | MAMA Dental Clinic & Orthodontic Centre | Pazhanji, Kerala",
-  description: "Find MAMA Dental Clinic and Orthodontic Centre near you. Visit our state-of-the-art clinic in Pazhanji, Kerala. Led by Orthodontist Dr. Minu.",
+  title: "Our Location | MAMA Dental Clinic & Orthodontic Centre Pazhanji",
+  description: "Find MAMA Dental Clinic and Orthodontic Centre on Main Road, Pazhanji, Kerala. Get directions, contact details, and clinic hours.",
 };
 
 export default function LocationPage() {

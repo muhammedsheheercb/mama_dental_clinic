@@ -2,8 +2,8 @@ import React from "react";
 import ServicePageTemplate from "../components/ServicePageTemplate";
 
 export const metadata = {
-  title: "Crowns & Bridges | Pazhanji, Kerala | MAMA Dental Clinic",
-  description: "Restore damaged or missing teeth with custom crowns and bridges at MAMA Dental Clinic. Natural-looking restorations in Pazhanji, Kerala.",
+  title: "Dental Crowns & Bridges in Pazhanji | MAMA Dental Clinic",
+  description: "Restore damaged or missing teeth with long-lasting porcelain and solid zirconia crowns and bridges at MAMA Dental Clinic in Pazhanji, Kerala.",
 };
 
 export default function CrownsBridgesPage() {

@@ -2,8 +2,8 @@ import React from "react";
 import ServicePageTemplate from "../components/ServicePageTemplate";
 
 export const metadata = {
-  title: "Premium Clean Aligners | Pazhanji, Kerala | MAMA Dental Clinic",
-  description: "Achieve your perfect smile discreetly with MAMA Dental Clinic's custom clear aligners. Medical-grade, invisible orthodontic braces in Pazhanji, Kerala.",
+  title: "Clear Aligners in Pazhanji | Invisible Braces | MAMA Dental Clinic",
+  description: "Straighten your teeth comfortably with virtually invisible clear aligners at MAMA Dental Clinic, Pazhanji. Personalized orthodontic plans by Orthodontist Dr. Minu.",
 };
 
 export default function CleanAlignersPage() {

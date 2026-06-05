@@ -2,8 +2,8 @@ import React from "react";
 import ServicePageTemplate from "../components/ServicePageTemplate";
 
 export const metadata = {
-  title: "Laser Gum Contouring | Pazhanji | MAMA Dental Clinic",
-  description: "Correct a gummy smile or uneven gumline with precise laser gum contouring at MAMA Dental Clinic. Painless treatment in Pazhanji.",
+  title: "Laser Gum Contouring in Pazhanji | MAMA Dental Clinic",
+  description: "Correct your gummy smile with advanced, painless laser gum contouring at MAMA Dental Clinic, Pazhanji, Kerala. Enhance symmetry with fast recovery time.",
 };
 
 export default function GumContouringPage() {

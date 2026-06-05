@@ -2,8 +2,8 @@ import React from "react";
 import ServicePageTemplate from "../components/ServicePageTemplate";
 
 export const metadata = {
-  title: "Orthodontic Braces | Pazhanji, Kerala | MAMA Dental Clinic",
-  description: "Achieve straight, healthy teeth with modern orthodontic braces at MAMA Dental Clinic. Expert care in Pazhanji, Kerala by Orthodontist Dr. Minu.",
+  title: "Orthodontic Braces in Pazhanji, Kerala | MAMA Dental Clinic",
+  description: "Get high-quality metal, ceramic, or self-ligating braces in Pazhanji, Thrissur at MAMA Dental Clinic. Comprehensive alignment treatments led by Dr. Minu.",
 };
 
 export default function BracesPage() {

@@ -2,8 +2,8 @@ import React from "react";
 import ServicePageTemplate from "../components/ServicePageTemplate";
 
 export const metadata = {
-  title: "Professional Teeth Whitening | Pazhanji | MAMA Dental Clinic",
-  description: "Get a brighter, whiter smile with professional teeth whitening treatments at MAMA Dental Clinic. Fast and safe in Pazhanji, Kerala.",
+  title: "Laser Teeth Whitening in Pazhanji | MAMA Dental Clinic",
+  description: "Brighten your smile up to 8 shades with professional, safe laser teeth whitening in Pazhanji, Kerala at MAMA Dental Clinic. Fast, painless cosmetic results.",
 };
 
 export default function TeethWhiteningPage() {

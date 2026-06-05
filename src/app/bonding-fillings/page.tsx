@@ -2,8 +2,8 @@ import React from "react";
 import ServicePageTemplate from "../components/ServicePageTemplate";
 
 export const metadata = {
-  title: "Composite Bonding & Fillings | Pazhanji | MAMA Dental Clinic",
-  description: "Repair minor decay, chips, or gaps with tooth-colored composite bonding and fillings at MAMA Dental Clinic in Pazhanji, Kerala.",
+  title: "Composite Bonding & Tooth Fillings in Pazhanji | MAMA Dental Clinic",
+  description: "Repair chipped, cracked, or decayed teeth with natural-looking tooth-colored composite bonding and fillings at MAMA Dental Clinic, Pazhanji, Kerala.",
 };
 
 export default function BondingFillingsPage() {

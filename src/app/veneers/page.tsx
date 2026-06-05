@@ -2,8 +2,8 @@ import React from "react";
 import ServicePageTemplate from "../components/ServicePageTemplate";
 
 export const metadata = {
-  title: "Premium Porcelain Veneers | Pazhanji, Kerala | MAMA Dental Clinic",
-  description: "Transform your smile with premium custom veneers at MAMA Dental Clinic. Fix chips, gaps, and stains in Pazhanji, Kerala.",
+  title: "Dental Veneers in Pazhanji | MAMA Dental Clinic & Orthodontic Centre",
+  description: "Transform your smile with premium porcelain veneers in Pazhanji, Kerala at MAMA Dental Clinic. Custom IPS e.max cosmetic veneers designed for a flawless natural look.",
 };
 
 export default function VeneersPage() {

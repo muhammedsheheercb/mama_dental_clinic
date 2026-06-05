@@ -5,8 +5,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "Contact Us | MAMA Dental Clinic & Orthodontic Centre | Pazhanji, Kerala",
-  description: "Get in touch with MAMA Dental Clinic and Orthodontic Centre in Pazhanji, Kerala. Reach out to schedule a consultation or ask Dr. Minu and our orthodontics team any questions.",
+  title: "Contact Us | Book Appointment | MAMA Dental Clinic Pazhanji",
+  description: "Contact MAMA Dental Clinic & Orthodontic Centre in Pazhanji, Kerala. Call us at +91 90480 54405 or message us on WhatsApp to book your consultation.",
 };
 
 export default function ContactPage() {
