@@ -14,13 +14,13 @@ export default function LocationPage() {
   return (
     <>
       <Header />
-      
+
       <main style={{ flex: 1, width: "100%", maxWidth: "100%", overflowX: "hidden", backgroundColor: "#ffffff" }}>
-        
+
         {/* Section 1: Title and Branch Cards Grid */}
         <section className="location-hero-section" style={{ padding: "140px 0 60px 0", backgroundColor: "#ffffff" }}>
           <div className="service-container">
-            
+
             <h1 className="location-hero-title" style={{ fontSize: "3.6rem", fontWeight: "800", color: "#1e3a44", textAlign: "center", marginBottom: "60px", fontFamily: "var(--font-serif)", letterSpacing: "-0.02em" }}>
               Find a Branch Near You
             </h1>
@@ -28,15 +28,15 @@ export default function LocationPage() {
             {/* 2-Column Branches Card Grid */}
             {/* Single Branch Card centered */}
             <div className="location-grid" style={{ display: "grid", gridTemplateColumns: "1fr", gap: "30px", marginBottom: "80px", maxWidth: "800px", margin: "0 auto 80px auto" }}>
-              
+
               {/* Branch 1: Pazhanji, Kerala */}
-              <div 
-                className="location-card" 
-                style={{ 
-                  position: "relative", 
-                  height: "480px", 
-                  borderRadius: "24px", 
-                  overflow: "hidden", 
+              <div
+                className="location-card"
+                style={{
+                  position: "relative",
+                  height: "480px",
+                  borderRadius: "24px",
+                  overflow: "hidden",
                   boxShadow: "0 15px 35px rgba(0,0,0,0.06)",
                   display: "flex",
                   flexDirection: "column",
@@ -52,7 +52,7 @@ export default function LocationPage() {
                   style={{ objectFit: "cover" }}
                   sizes="(max-width: 768px) 100vw, 80vw"
                 />
-                
+
                 {/* Gradient Overlay for Legibility */}
                 <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0) 100%)", zIndex: 1 }} />
 
@@ -64,18 +64,18 @@ export default function LocationPage() {
                   <p style={{ fontSize: "1rem", color: "#e2e8f0", margin: 0, lineHeight: "1.5", maxWidth: "520px" }}>
                     M3P3+X23, Main Road, Pazhanji, Kerala 680542
                   </p>
-                  <a 
-                    href="https://share.google/IYBJ7i53KJ7Tmw4lS" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                  <a
+                    href="https://share.google/IYBJ7i53KJ7Tmw4lS"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="location-link"
-                    style={{ 
-                      fontSize: "1.1rem", 
-                      fontWeight: "700", 
-                      color: "#00acee", 
-                      textDecoration: "none", 
-                      display: "inline-flex", 
-                      alignItems: "center", 
+                    style={{
+                      fontSize: "1.1rem",
+                      fontWeight: "700",
+                      color: "#00acee",
+                      textDecoration: "none",
+                      display: "inline-flex",
+                      alignItems: "center",
                       gap: "6px",
                       marginTop: "5px",
                       transition: "color 0.2s ease"
@@ -89,7 +89,7 @@ export default function LocationPage() {
             </div>
 
             {/* Bottom Banner Section matching mockup exactly */}
-            <div 
+            <div
               className="location-banner"
               style={{
                 width: "100%",
@@ -109,10 +109,10 @@ export default function LocationPage() {
                 <h2 style={{ fontSize: "3rem", fontWeight: "800", color: "#ffffff", lineHeight: "1.2", margin: 0 }}>
                   Experience the Difference in Dental Care
                 </h2>
-                
+
                 <div>
-                  <Link 
-                    href="/contact" 
+                  <Link
+                    href="/contact"
                     className="btn-pill-white-cta"
                     style={{
                       backgroundColor: "#ffffff",
@@ -138,7 +138,7 @@ export default function LocationPage() {
               {/* Right Column Image */}
               <div style={{ position: "relative", width: "100%", height: "100%", minHeight: "360px", display: "flex", justifyContent: "flex-end", overflow: "hidden" }}>
                 <Image
-                  src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=800"
+                  src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Smiling Patient at Dental Clinic"
                   fill
                   style={{ objectFit: "cover", objectPosition: "center 20%" }}
