@@ -94,7 +94,7 @@ export default function Header() {
 
           {/* Desktop CTA */}
           <div className="header-cta">
-            <Link href="#book" className="btn btn-primary" style={{ padding: "10px 24px", fontSize: "0.875rem" }}>
+            <Link href="/contact" className="btn btn-primary" style={{ padding: "10px 24px", fontSize: "0.875rem" }}>
               Book Now
             </Link>
           </div>
@@ -202,7 +202,7 @@ export default function Header() {
         {/* Book Button */}
         <div style={{ marginTop: "auto", display: "flex", flexDirection: "column", gap: "16px" }}>
           <Link
-            href="#book"
+            href="/contact"
             className="btn btn-primary"
             onClick={() => setMobileMenuOpen(false)}
             style={{ width: "100%" }}

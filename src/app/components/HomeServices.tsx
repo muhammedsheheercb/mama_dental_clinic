@@ -42,7 +42,7 @@ export default function HomeServices() {
                 <Link href="/veneers" className="btn-banner-outline">
                   Learn More
                 </Link>
-                <Link href="#book" className="btn-pill-blue">
+                <Link href="/contact" className="btn-pill-blue">
                   Book Now
                 </Link>
               </div>
@@ -70,7 +70,7 @@ export default function HomeServices() {
                   <Link href="/clean-aligners" className="btn-banner-outline">
                     Learn More
                   </Link>
-                  <Link href="#book" className="btn-pill-blue">
+                  <Link href="/contact" className="btn-pill-blue">
                     Book Now
                   </Link>
                 </div>
@@ -95,7 +95,7 @@ export default function HomeServices() {
                   <Link href="/braces" className="btn-banner-outline">
                     Learn More
                   </Link>
-                  <Link href="#book" className="btn-pill-blue">
+                  <Link href="/contact" className="btn-pill-blue">
                     Book Now
                   </Link>
                 </div>
@@ -126,7 +126,7 @@ export default function HomeServices() {
                   <Link href="/crowns-bridges" className="btn-banner-outline">
                     Learn More
                   </Link>
-                  <Link href="#book" className="btn-pill-blue">
+                  <Link href="/contact" className="btn-pill-blue">
                     Book Now
                   </Link>
                 </div>
@@ -151,7 +151,7 @@ export default function HomeServices() {
                   <Link href="/teeth-whitening" className="btn-banner-outline">
                     Learn More
                   </Link>
-                  <Link href="#book" className="btn-pill-blue">
+                  <Link href="/contact" className="btn-pill-blue">
                     Book Now
                   </Link>
                 </div>
@@ -181,7 +181,7 @@ export default function HomeServices() {
                   <Link href="/gum-contouring" className="btn-banner-outline">
                     Learn More
                   </Link>
-                  <Link href="#book" className="btn-pill-blue">
+                  <Link href="/contact" className="btn-pill-blue">
                     Book Now
                   </Link>
                 </div>
@@ -206,7 +206,7 @@ export default function HomeServices() {
                   <Link href="/bonding-fillings" className="btn-banner-outline">
                     Learn More
                   </Link>
-                  <Link href="#book" className="btn-pill-blue">
+                  <Link href="/contact" className="btn-pill-blue">
                     Book Now
                   </Link>
                 </div>

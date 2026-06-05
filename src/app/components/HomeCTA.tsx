@@ -13,7 +13,7 @@ export default function HomeCTA() {
             Experience the Difference in Dental Care
           </h2>
           
-          <Link href="#book" className="btn-pill-blue-cta">
+          <Link href="/contact" className="btn-pill-blue-cta">
             Book Now
           </Link>
         </div>

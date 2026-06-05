@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Percent, Star, Shield } from "lucide-react";
 
 export default function HomeStudent() {
@@ -174,9 +175,9 @@ export default function HomeStudent() {
 
         {/* Register Button */}
         <div>
-          <a href="#book" className="btn-pill-blue" style={{ fontSize: "1.05rem", padding: "14px 44px" }}>
+          <Link href="/contact" className="btn-pill-blue" style={{ fontSize: "1.05rem", padding: "14px 44px" }}>
             Register Now
-          </a>
+          </Link>
         </div>
 
       </div>

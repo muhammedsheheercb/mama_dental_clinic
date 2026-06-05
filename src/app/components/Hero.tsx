@@ -23,7 +23,7 @@ export default function Hero() {
           </p>
 
           <div className="hero-ctas">
-            <Link href="#book" className="btn btn-primary">
+            <Link href="/contact" className="btn btn-primary">
               <Calendar size={18} />
               Book Appointment
             </Link>

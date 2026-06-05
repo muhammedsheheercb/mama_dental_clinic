@@ -28,7 +28,7 @@ export default function HomeHero() {
           Experience the Next Level of Beauty, Comfort, and Personalized Care
         </p>
         <div style={{ display: "flex", justifyContent: "center" }}>
-          <Link href="#book" className="btn-pill-blue">
+          <Link href="/contact" className="btn-pill-blue">
             Book Now
           </Link>
         </div>
