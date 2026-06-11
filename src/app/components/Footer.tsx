@@ -35,8 +35,9 @@ export default function Footer() {
           <div className="footer-top">
             
             {/* Column 1: Logo & Slogan */}
-            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-              <Link href="/" style={{ display: "flex", alignItems: "center", gap: "10px", textDecoration: "none" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+              <Link href="/" style={{ display: "flex", alignItems: "center", gap: "10px", textDecoration: "none", width: "100%" }}>
+                <span className="footer-logo-line" />
                 <Image
                   src="/images/logo.webp"
                   alt="MAMA Dental Clinic Logo"
@@ -44,47 +45,15 @@ export default function Footer() {
                   height={40}
                   style={{ objectFit: "contain" }}
                 />
-                <span className="footer-logo-text" style={{ fontSize: "1.6rem", fontWeight: "800", letterSpacing: "-0.02em", color: "#1e3a44" }}>
+                <span className="footer-logo-text" style={{ fontSize: "1.6rem", fontWeight: "800", letterSpacing: "-0.02em", color: "#1e3a44", whiteSpace: "nowrap" }}>
                   MAMA DENTAL<span style={{ color: "#2ec4b6" }}>.</span>
                 </span>
+                <span className="footer-logo-line" />
               </Link>
               
               <p style={{ margin: "4px 0 0 0", color: "#495057", fontSize: "0.95rem", fontWeight: "500" }}>
                 Because Smile Matters
               </p>
-
-              {/* Social Channels (Screenshot 8 / Image 2 circular outline black) */}
-              <div className="social-links">
-                {/* Facebook */}
-                <a
-                  href="https://www.facebook.com/share/1NkR8Fjkc6/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="social-link"
-                  aria-label="Facebook"
-                  style={{ border: "1px solid #111111", color: "#111111" }}
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                  </svg>
-                </a>
-                
-                {/* Instagram */}
-                <a
-                  href="https://www.instagram.com/mamadentalclinic?igsh=MWFrMzJhank2NDBtNw=="
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="social-link"
-                  aria-label="Instagram"
-                  style={{ border: "1px solid #111111", color: "#111111" }}
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-                  </svg>
-                </a>
-              </div>
             </div>
 
             {/* Column 2: Company */}
@@ -111,38 +80,80 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Column 4: Contacts Us */}
-            <div>
-              <h3 className="footer-title">Contacts Us</h3>
-              <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-                
-                {/* Email */}
-                <div className="footer-contact-item">
-                  <Mail size={16} className="footer-contact-icon" style={{ color: "#495057" }} />
-                  <div className="footer-contact-text">
-                    <a href="mailto:mamapazhanji@gmail.com" style={{ color: "#495057", textDecoration: "none" }}>mamapazhanji@gmail.com</a>
+            {/* Column 4: Contact Us & Connect */}
+            <div style={{ display: "flex", flexDirection: "column", gap: "28px" }}>
+              <div>
+                <h3 className="footer-title">Contact Us</h3>
+                <div className="footer-contact-list" style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+                  
+                  {/* Email */}
+                  <div className="footer-contact-item">
+                    <Mail size={16} className="footer-contact-icon" style={{ color: "#495057" }} />
+                    <div className="footer-contact-text">
+                      <a href="mailto:mamapazhanji@gmail.com" style={{ color: "#495057", textDecoration: "none" }}>mamapazhanji@gmail.com</a>
+                    </div>
                   </div>
+
+                  {/* Phone */}
+                  <div className="footer-contact-item">
+                    <Phone size={16} className="footer-contact-icon" style={{ color: "#495057" }} />
+                    <div className="footer-contact-text">
+                      <a href="tel:+919048054405" style={{ color: "#495057", textDecoration: "none" }}>+91 90480 54405</a>
+                    </div>
+                  </div>
+
+                  {/* Address */}
+                  <div className="footer-contact-item">
+                    <MapPin size={16} className="footer-contact-icon" style={{ color: "#495057" }} />
+                    <div className="footer-contact-text">
+                      <p style={{ color: "#495057", fontSize: "0.925rem", lineHeight: "1.6", margin: 0 }}>
+                        M3P3+X23, Main Road,<br />
+                        Pazhanji, Kerala 680542
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              {/* Connect Section (Socials + CTA Button matching SDK mockup) */}
+              <div className="footer-connect-section">
+                <h3 className="footer-title">Connect</h3>
+                <div className="social-links" style={{ display: "flex", gap: "12px", marginBottom: "16px" }}>
+                  {/* Facebook */}
+                  <a
+                    href="https://www.facebook.com/share/1NkR8Fjkc6/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-link"
+                    aria-label="Facebook"
+                    style={{ border: "1px solid #111111", color: "#111111" }}
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                    </svg>
+                  </a>
+                  
+                  {/* Instagram */}
+                  <a
+                    href="https://www.instagram.com/mamadentalclinic?igsh=MWFrMzJhank2NDBtNw=="
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-link"
+                    aria-label="Instagram"
+                    style={{ border: "1px solid #111111", color: "#111111" }}
+                  >
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                    </svg>
+                  </a>
                 </div>
 
-                {/* Phone */}
-                <div className="footer-contact-item">
-                  <Phone size={16} className="footer-contact-icon" style={{ color: "#495057" }} />
-                  <div className="footer-contact-text">
-                    <a href="tel:+919048054405" style={{ color: "#495057", textDecoration: "none" }}>+91 90480 54405</a>
-                  </div>
-                </div>
-
-                {/* Address */}
-                <div className="footer-contact-item">
-                  <MapPin size={16} className="footer-contact-icon" style={{ color: "#495057" }} />
-                  <div className="footer-contact-text">
-                    <p style={{ color: "#495057", fontSize: "0.925rem", lineHeight: "1.6", margin: 0 }}>
-                      M3P3+X23, Main Road,<br />
-                      Pazhanji, Kerala 680542
-                    </p>
-                  </div>
-                </div>
-
+                <Link href="/contact" className="footer-cta-button">
+                  Book Now
+                </Link>
               </div>
             </div>
 
