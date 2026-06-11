@@ -10,7 +10,7 @@ export default function Team() {
       education: "BDS, MDS (Orthodontics and Dentofacial Orthopedics)",
       bio: "Dr. Minu C. Mathews guides the vision and clinical operations of MAMA Dental Clinic & Orthodontic Centre. Combining advanced orthodontic science with aesthetic expertise, she has established the clinic as Pazhanji's premier destination for comprehensive dental care and smile corrections.",
       details: "With specialized expertise in modern braces and clear aligners, Dr. Minu leverages advanced digital diagnostics (including digital X-rays and intraoral 3D scanning) to ensure precise, comfortable, and personalized treatment results for patients of all ages.",
-      image: "https://images.unsplash.com/photo-1594824813573-246434de83fb?auto=format&fit=crop&q=80&w=600",
+      image: "/images/team/5.webp",
     },
   ];
 

@@ -5,8 +5,9 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
   const companyLinks = [
-    { name: "Home", href: "#" },
-    { name: "About", href: "/about" },
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "/about" },
+    { name: "Our Team", href: "/team" },
     { name: "Careers", href: "/careers" },
     { name: "Location", href: "/location" },
     { name: "Blog", href: "/blog" },

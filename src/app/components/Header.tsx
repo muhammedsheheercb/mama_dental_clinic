@@ -75,19 +75,22 @@ export default function Header() {
                 })}
               </div>
             </div>
-            <Link href="/about" className="nav-link">
+            <Link href="/about" className={`nav-link ${pathname === "/about" || pathname === "/about-us" ? "active" : ""}`}>
               About Us
             </Link>
-            <Link href="/careers" className="nav-link">
+            <Link href="/team" className={`nav-link ${pathname === "/team" ? "active" : ""}`}>
+              Our Team
+            </Link>
+            <Link href="/careers" className={`nav-link ${pathname === "/careers" ? "active" : ""}`}>
               Careers
             </Link>
-            <Link href="/location" className="nav-link">
+            <Link href="/location" className={`nav-link ${pathname === "/location" ? "active" : ""}`}>
               Location
             </Link>
-            <Link href="/blog" className="nav-link">
+            <Link href="/blog" className={`nav-link ${pathname === "/blog" || pathname?.startsWith("/blog/") || pathname?.startsWith("/our-blogs") ? "active" : ""}`}>
               Blog
             </Link>
-            <Link href="/contact" className="nav-link">
+            <Link href="/contact" className={`nav-link ${pathname === "/contact" ? "active" : ""}`}>
               Contact Us
             </Link>
           </nav>
@@ -182,19 +185,22 @@ export default function Header() {
             )}
           </div>
 
-          <Link href="/about" className="mobile-link" onClick={() => setMobileMenuOpen(false)}>
+          <Link href="/about" className="mobile-link" onClick={() => setMobileMenuOpen(false)} style={pathname === "/about" || pathname === "/about-us" ? { color: "var(--secondary)" } : {}}>
             About Us
           </Link>
-          <Link href="/careers" className="mobile-link" onClick={() => setMobileMenuOpen(false)}>
+          <Link href="/team" className="mobile-link" onClick={() => setMobileMenuOpen(false)} style={pathname === "/team" ? { color: "var(--secondary)" } : {}}>
+            Our Team
+          </Link>
+          <Link href="/careers" className="mobile-link" onClick={() => setMobileMenuOpen(false)} style={pathname === "/careers" ? { color: "var(--secondary)" } : {}}>
             Careers
           </Link>
-          <Link href="/location" className="mobile-link" onClick={() => setMobileMenuOpen(false)}>
+          <Link href="/location" className="mobile-link" onClick={() => setMobileMenuOpen(false)} style={pathname === "/location" ? { color: "var(--secondary)" } : {}}>
             Location
           </Link>
-          <Link href="/blog" className="mobile-link" onClick={() => setMobileMenuOpen(false)}>
+          <Link href="/blog" className="mobile-link" onClick={() => setMobileMenuOpen(false)} style={pathname === "/blog" || pathname?.startsWith("/blog/") || pathname?.startsWith("/our-blogs") ? { color: "var(--secondary)" } : {}}>
             Blog
           </Link>
-          <Link href="/contact" className="mobile-link" onClick={() => setMobileMenuOpen(false)}>
+          <Link href="/contact" className="mobile-link" onClick={() => setMobileMenuOpen(false)} style={pathname === "/contact" ? { color: "var(--secondary)" } : {}}>
             Contact Us
           </Link>
         </div>
