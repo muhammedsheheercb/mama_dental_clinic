@@ -151,6 +151,24 @@ export default function TeamPage() {
         "Dr. Jabins Multispeciality Dental Clinic, Pavartty (Consultant)",
         "Orodent, Kunnamkulam & Noor Oral Care, Chammanur (Consultant)"
       ]
+    },
+    {
+      id: 8,
+      name: "Dr. Nithya R Krishnan",
+      role: "Consultant Periodontist & Implantologist",
+      education: "BDS, MDS (Periodontics)",
+      college: "Coorg Institute of Dental Sciences",
+      image: "/images/team/5.webp",
+      bio: "Backed by 13 years of clinical dental practice and 8 years of expertise as a Periodontist, Dr. Nithya R Krishnan has gained extensive experience in leading clinics and hospitals, completing more than 500 advanced periodontal surgeries, periodontal plastic procedures, laser therapies, and dental implant treatments, delivering predictable outcomes and exceptional patient care.",
+      areasOfExpertise: [
+        "Laser-Assisted Periodontal Treatments",
+        "Dental Implants",
+        "Advanced Periodontal Surgeries",
+        "Periodontal Plastic Procedures"
+      ],
+      certifications: [
+        "Implant Dentistry from Nobel Biocare"
+      ]
     }
   ];
 
@@ -179,14 +197,13 @@ export default function TeamPage() {
         </section>
 
         {/* Leadership Section - Dr. Minu C. Mathews */}
-        <section style={{ padding: "0 0 80px 0", backgroundColor: "#ffffff" }}>
+        {/* <section style={{ padding: "0 0 80px 0", backgroundColor: "#ffffff" }}>
           <div className="container">
             <h2 style={{ fontSize: "2rem", fontWeight: "800", color: "#0f4c5c", textAlign: "center", marginBottom: "40px", position: "relative" }} className="section-title">
               Clinical <span>Leadership</span>
             </h2>
 
             <div className="team-page-director-card">
-              {/* Avatar */}
               <div className="team-avatar-container" style={{ aspectRatio: "1", width: "100%", height: "auto" }}>
                 <Image
                   src={clinicalDirector.image}
@@ -198,7 +215,6 @@ export default function TeamPage() {
                 />
               </div>
 
-              {/* Bio & Details */}
               <div className="team-info" style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
                 <div>
                   <h3 style={{ fontSize: "1.9rem", color: "var(--primary)", fontWeight: "800", margin: "0 0 4px 0" }}>
@@ -249,7 +265,7 @@ export default function TeamPage() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Specialists Grid Section */}
         <section style={{ padding: "80px 0 100px 0", backgroundColor: "#f7f9fa" }}>
@@ -267,7 +283,7 @@ export default function TeamPage() {
             <div className="team-grid">
               {specialists.map((doctor) => (
                 <div key={doctor.id} className="team-page-specialist-card">
-                  
+
                   {/* Avatar */}
                   <div className="team-page-specialist-avatar">
                     <Image
