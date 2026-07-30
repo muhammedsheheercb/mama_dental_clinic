@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { GraduationCap, Award, Stethoscope, Briefcase, BookOpen, User, Check } from "lucide-react";
+import { GraduationCap, Award, Stethoscope, Briefcase, User, Check } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -25,149 +25,121 @@ interface TeamMember {
 }
 
 export default function TeamPage() {
-  const clinicalDirector: TeamMember = {
-    id: 5,
-    name: "Dr. Minu C. Mathews",
-    role: "Chief Orthodontist & Clinical Director",
-    education: "BDS, MDS (Orthodontics and Dentofacial Orthopedics)",
-    image: "/images/team/5.webp",
-    bio: "Dr. Minu C. Mathews guides the vision and clinical operations of MAMA Dental Clinic & Orthodontic Centre. Combining advanced orthodontic science with aesthetic expertise, she has established the clinic as Pazhanji's premier destination for comprehensive dental care and smile corrections.",
-    areasOfExpertise: [
-      "Modern Braces & Damon System",
-      "Clear Aligner Therapy (Invisalign & Premium Aligners)",
-      "Smile Designing & Aesthetic Dentistry",
-      "Intraoral 3D Scanning & Digital Diagnostics",
-      "Pediatric and Adult Interceptive Orthodontics"
-    ]
-  };
-
   const specialists: TeamMember[] = [
     {
       id: 1,
-      name: "Dr. Shilpa Elsa George",
-      role: "Consultant Prosthodontist & Implantologist",
-      education: "BDS, MDS (Prosthodontics, Crown & Bridge)",
-      college: "Christian Dental College, Ludhiana",
+      name: "Dr. Minu C. Mathews",
+      role: "Chief Dental Surgeon & Managing Director",
+      education: "BDS, MDS (Orthodontics and Dentofacial Orthopedics)",
+      college: "Christian Dental College, Ludhiana; Malabar Dental College (KUHS)",
       image: "/images/team/1.webp",
-      bio: "Dr. Shilpa specializes in restoring and replacing missing teeth to improve both oral function and aesthetics. With advanced training in prosthodontics from CDC Ludhiana, she delivers highly customized, durable, and natural-looking dental solutions.",
+      bio: "Dr. Minu C. Mathews is an accomplished Specialist Orthodontist with over 10 years of clinical experience. She currently serves as the Chief Dental Surgeon and Managing Director at MAMA Dental Clinic and Orthodontic Centre. As an official Invisalign® Provider and specialist in Cosmetic Smile Designing & Veneering, she combines high-end aesthetic dental care with advanced orthodontic techniques to design seamless, natural-looking, and confident smiles.",
       areasOfExpertise: [
-        "Complete & Partial Dentures",
-        "Teeth and Implant Supported Overdentures",
-        "Porcelain Veneers & Laminates",
-        "Crown & Bridge Restorations",
-        "Digital Smile Designing"
-      ]
+        "Cosmetic Dentistry & Smile Designing: Porcelain and composite veneers, cosmetic smile designing, crowns & bridges, aesthetic restorations",
+        "Clear Aligners & Orthodontics: Invisalign®, clear aligner therapy, self-ligating brackets, MARPE, orthopedic and jaw discrepancy corrections",
+        "Surgical & Advanced Procedures: Surgical extractions, surgery-assisted orthodontics, implant-supported orthodontics, impacted canines",
+        "Preventive & Pediatric Care: Early growth modification, serial extractions, preventive orthodontics"
+      ],
+      certifications: ["Official Invisalign® Provider"]
     },
     {
       id: 2,
-      name: "Dr. Meenu Prasannan",
-      role: "Consultant Pediatric & Preventive Dentist",
-      education: "MDS (Pediatric & Preventive Dentistry)",
-      college: "Sri Sankara Dental College, Trivandrum",
+      name: "Dr. Bhoomika P.C.",
+      role: "Specialist Oral & Maxillofacial Surgeon",
+      education: "MDS (Oral & Maxillofacial Surgery)",
+      college: "Assistant Professor – Royal Dental College",
       image: "/images/team/2.webp",
+      bio: "Dr. Bhoomika P.C. is an accomplished Specialist Oral & Maxillofacial Surgeon dedicated to delivering precise, safe, and comfortable surgical care. She also serves as an Assistant Professor at Royal Dental College, training the next generation of dental professionals and staying at the forefront of modern surgical advancements.",
       areasOfExpertise: [
-        "Child Behaviour Management",
-        "Comprehensive Pediatric Treatments",
-        "Preventive Dental Therapy for Children",
-        "Laser Dentistry for Kids",
-        "Minor Oral Surgical Procedures"
+        "Minor Surgical Procedures: Impacted wisdom teeth, complex extractions, pre-prosthetic surgeries",
+        "Surgical Oral Pathology: Cyst enucleation, biopsy procedures, soft tissue lesion excisions",
+        "Trauma & Emergency Care: Minor maxillofacial trauma, facial lacerations, dental injuries",
+        "Pre-Orthodontic & Aesthetic Surgeries: Frenectomies, surgical exposure of impacted teeth, alveoloplasty"
       ],
-      certifications: [
-        "Trained Provider in Conscious Sedation"
-      ],
-      achievements: [
-        "Gold Medalist (First Rank) in MDS University Exam from Kerala University of Health Sciences (KUHS)",
-        "Winner of multiple awards for scientific paper presentations at State and National Conferences",
-        "Published research articles in prestigious PubMed indexed medical journals",
-        "Expert in providing full-mouth rehabilitation for special children under General Anesthesia"
-      ]
+      achievements: ["Assistant Professor in the Department of Oral & Maxillofacial Surgery at Royal Dental College", "Committed to evidence-based practice, surgical safety protocols, and compassionate patient care"]
     },
     {
       id: 3,
-      name: "Dr. Bhoomika P.C.",
-      role: "Consultant Oral & Maxillofacial Surgeon",
-      education: "MDS (Oral And Maxillofacial Surgery)",
-      college: "Royal Dental College (Assistant Professor)",
+      name: "Dr. Meenu Prasannan",
+      role: "Specialist Pediatric Dentist",
+      education: "MDS (Pediatric & Preventive Dentistry)",
+      college: "Sri Sankara Dental College, Trivandrum",
       image: "/images/team/3.webp",
-      bio: "Dr. Bhoomika combines academic excellence with clinical precision. Serving as an Assistant Professor at Royal Dental College, she provides specialized surgical care for complex extractions and oral surgical treatments.",
+      bio: "Dr. Meenu Prasannan is a distinguished Specialist Pediatric Dentist and Gold Medalist (First Rank – KUHS). She provides comprehensive, pain-free dental care for infants, children, adolescents, and children with special healthcare needs, creating positive, anxiety-free dental experiences from a young age.",
       areasOfExpertise: [
-        "Minor Surgical Procedures",
-        "Complex & Wisdom Teeth Extractions",
-        "Pathological Lesion Management",
-        "Maxillofacial Trauma Assessment"
-      ]
+        "Child Psychology & Behavior Management: Non-pharmacological behavior shaping and child-friendly dental care",
+        "Sleep Dentistry & Sedation: Conscious Sedation and General Anesthesia",
+        "Full Mouth Rehabilitation for Special Needs: Single-visit rehabilitation under General Anesthesia",
+        "Preventive & Pediatric Treatments: Sealants, fluoride therapies, space maintainers, pulpectomies, pediatric crowns",
+        "Laser Dentistry & Minor Surgeries: Minimally invasive laser procedures and minor oral surgery"
+      ],
+      certifications: ["Trained provider in Conscious Sedation and General Anesthesia"],
+      achievements: ["Gold Medalist (First Rank) in MDS – Kerala University of Health Sciences (KUHS)", "Published researcher in PubMed-indexed international and national journals", "Award-winning presenter at State and National Pediatric Dentistry Conferences"]
     },
     {
       id: 4,
       name: "Dr. Akhil Thomas",
-      role: "Consultant Endodontist & Root Canal Specialist",
-      education: "MDS (Endodontics & Conservative Dentistry)",
+      role: "Endodontics",
+      education: "Endodontics",
       college: "PSM Dental College",
       image: "/images/team/4.webp",
-      bio: "Dr. Akhil is dedicated to preserving the natural dentition through high-precision endodontic therapy. He specializes in advanced, pain-free root canal treatments utilizing the latest technology.",
+      areasOfExpertise: ["Root Canal Treatment", "Apexification"]
+    },
+    {
+      id: 5,
+      name: "Dr. Girish B. Viswanathan",
+      role: "Prosthodontist & Senior Specialist Implantologist",
+      education: "MDS in Prosthodontics & Implantology; BDS",
+      college: "Kalinga Institute of Dental Sciences, KIIT University",
+      image: "/images/team/5.webp",
+      bio: "Dr. Girish B. Viswanathan is a distinguished Prosthodontist and Senior Specialist Implantologist with extensive experience in advanced restorative procedures and complex surgical implantology. He is known for full-mouth rehabilitations, graftless Zygomatic implants, and same-day teeth protocols, combining precision surgical techniques with international treatment standards.",
       areasOfExpertise: [
-        "Single-visit Root Canal Treatment",
-        "Apexification & Regenerative Endodontics",
-        "Microscope-assisted Root Canals",
-        "Conservative Cosmetic Restorations"
-      ]
+        "Advanced Dental Implantology: Single and multiple tooth implants, immediate loading implants, All-on-4 and All-on-6",
+        "Complex Surgical Procedures: Zygomatic, Pterygoid, and Transnasal implants",
+        "Guided Surgery & Bone Protocols: 3D CBCT guided surgery, bone grafting, sinus lifts, ridge augmentation, immediate extraction placements",
+        "Prosthodontics & Rehabilitation: Zirconia and ceramic crowns & bridges, overdentures, full-mouth reconstructions"
+      ],
+      certifications: ["Advanced Zygomatic Implantology Training – Noris Medical", "Certified in Guided Implant Surgery and Digital Workflows – Straumann & Glidewell Laboratories"]
     },
     {
       id: 6,
-      name: "Dr. Rohith Ravindran",
-      role: "Consultant Oral & Maxillofacial Surgeon",
-      education: "MDS (Oral & Maxillofacial Surgery)",
-      college: "Anjarakandy Dental College",
+      name: "Dr. Nithya R Krishnan",
+      role: "Specialist Periodontist & Implantologist",
+      education: "MDS (Periodontics & Implantology), BDS",
+      college: "Coorg Institute of Dental Sciences",
       image: "/images/team/6.webp",
-      bio: "Dr. Rohith is an expert in surgical interventions for facial structures. His practice spans from minor oral surgeries to complex facial cosmetic and reconstructive procedures, focusing on patient comfort and functional outcomes.",
-      areasOfExpertise: [
-        "Minor and Major Maxillofacial Surgery",
-        "Temporomandibular Joint (TMJ) Management",
-        "Facial Cosmetic & Esthetic Procedures",
-        "Maxillofacial Trauma Care"
-      ]
+      bio: "Backed by 13 years of clinical practice and 8 years of specialized expertise, Dr. Nithya R Krishnan is an expert Periodontist and Implantologist. She has successfully performed over 500 advanced periodontal surgeries, laser treatments, and implant procedures.",
+      areasOfExpertise: ["Implantology: Dental implants and Nobel Biocare restorations", "Advanced Gum Care: Laser-assisted periodontal treatments", "Surgical Expertise: Advanced periodontal and plastic surgeries"],
+      certifications: ["Advanced certification in Implant Dentistry from Nobel Biocare"]
     },
     {
       id: 7,
       name: "Dr. Anjali Sreedharan",
-      role: "Consultant Periodontist & Implantologist",
-      education: "BDS, MDS (Periodontics)",
-      college: "Amrita University (BDS 2009-13, MDS 2016-19)",
+      role: "Consultant Periodontist & Dental Surgeon",
+      education: "MDS (Periodontics & Oral Implantology)",
+      college: "BDS and MDS – Amrita University | Reg. No: 14064",
       image: "/images/team/7.webp",
+      bio: "Dr. Anjali Sreedharan is a highly qualified Specialist Periodontist dedicated to advanced gum care and preventive dentistry. With a strong research background and expertise in laser applications and surgical periodontics, she focuses on personalized, evidence-based treatments for long-term oral health.",
       areasOfExpertise: [
-        "Advanced Periodontal Disease Management",
-        "Laser-Assisted Periodontics & Gum Care",
-        "Power-Driven Scaling & Root Planing",
-        "Moesin Biomarker GCF Periodontal Analysis"
+        "Advanced Periodontal Care: Bleeding gums, bad breath, severe gum infections and periodontitis",
+        "Laser & Flap Surgery: Minimally invasive gum rejuvenation and therapy",
+        "Cosmetic Gum Contouring: Aesthetic reshaping for gummy smiles and uneven gum lines",
+        "Preventive & Routine Dentistry: Scaling, deep cleaning, and oral hygiene instruction"
       ],
-      achievements: [
-        "1st Prize in Paper Presentation ('Maxillary Labial Frenum - A Novel Classification') at SPIK Midterm Conference 2018",
-        "Published clinical author in the Journal of Indian Society of Periodontology (JISP)",
-        "Published randomized control trial researcher on toothbrush contamination after use"
-      ],
-      experience: [
-        "Dr. Kuruvila Memorial Dental Clinic, Kunnamkulam (Consultant & GP)",
-        "D Cure Dental Clinic, Koottanad (Consultant Periodontist)",
-        "Dr. Jabins Multispeciality Dental Clinic, Pavartty (Consultant)",
-        "Orodent, Kunnamkulam & Noor Oral Care, Chammanur (Consultant)"
-      ]
+      achievements: ["Published researcher with multiple scientific awards in Periodontics"]
     },
     {
       id: 8,
-      name: "Dr. Nithya R Krishnan",
-      role: "Consultant Periodontist & Implantologist",
-      education: "BDS, MDS (Periodontics)",
-      college: "Coorg Institute of Dental Sciences",
-      image: "/images/team/5.webp",
-      bio: "Backed by 13 years of clinical dental practice and 8 years of expertise as a Periodontist, Dr. Nithya R Krishnan has gained extensive experience in leading clinics and hospitals, completing more than 500 advanced periodontal surgeries, periodontal plastic procedures, laser therapies, and dental implant treatments, delivering predictable outcomes and exceptional patient care.",
+      name: "Dr. Shilpa Elsa George",
+      role: "Specialist Prosthodontist & Implantologist",
+      education: "MDS (Prosthodontics, Crown & Bridge), BDS",
+      college: "Christian Dental College, Ludhiana",
+      image: "/images/team/8.webp",
+      bio: "Dr. Shilpa Elsa George is a highly skilled Prosthodontist specializing in restorative, cosmetic, and implant dentistry. An alumnus of Christian Dental College, Ludhiana, she is dedicated to restoring patient smiles with precision, function, and natural aesthetics.",
       areasOfExpertise: [
-        "Laser-Assisted Periodontal Treatments",
-        "Dental Implants",
-        "Advanced Periodontal Surgeries",
-        "Periodontal Plastic Procedures"
-      ],
-      certifications: [
-        "Implant Dentistry from Nobel Biocare"
+        "Cosmetic Dentistry: Smile design and porcelain veneers",
+        "Prosthetics: Complete dentures, crowns & bridges",
+        "Implant Restorations: Teeth and implant-supported overdentures"
       ]
     }
   ];
@@ -416,7 +388,7 @@ export default function TeamPage() {
                   Ready to Consult Our Specialists?
                 </h2>
                 <p style={{ color: "#ffffff", fontSize: "1.1rem", opacity: 0.9, margin: 0, maxWidth: "520px" }}>
-                  Schedule your consultation today and experience world-class, comfortable dental care tailormade for you by Pazhanji's leading specialists.
+                  Schedule your consultation today and experience world-class, comfortable dental care tailormade for you by Pazhanji&apos;s leading specialists.
                 </p>
                 <div>
                   <Link
