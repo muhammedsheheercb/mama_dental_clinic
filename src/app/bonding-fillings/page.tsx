@@ -3,7 +3,8 @@ import ServicePageTemplate from "../components/ServicePageTemplate";
 
 export const metadata = {
   title: "Composite Bonding & Tooth Fillings in Pazhanji | MAMA Dental Clinic",
-  description: "Repair chipped, cracked, or decayed teeth with natural-looking tooth-colored composite bonding and fillings at MAMA Dental Clinic, Pazhanji, Kerala.",
+  description:
+    "Repair chipped, cracked, or decayed teeth with natural-looking tooth-colored composite bonding and fillings at MAMA Dental Clinic, Pazhanji, Kerala.",
 };
 
 export default function BondingFillingsPage() {
@@ -11,7 +12,7 @@ export default function BondingFillingsPage() {
     {
       tag: "Feature Or Benefits",
       title: "Repair chips and decay invisibly.",
-      image: "https://images.unsplash.com/photo-1667133295352-ef4c83620e8e?q=80&w=729&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/images/fill/repair.webp",
       details: [
         {
           title: "Seamless Cavity Filling",
@@ -30,7 +31,7 @@ export default function BondingFillingsPage() {
     {
       tag: "Procedure Overview",
       title: "Direct composite bonding in single session.",
-      image: "https://images.unsplash.com/photo-1663755489920-5e09f66d011a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/images/fill/direct.webp",
       details: [
         {
           title: "Shade Selection & Prep",
@@ -49,7 +50,7 @@ export default function BondingFillingsPage() {
     {
       tag: "Materials Used",
       title: "Biocompatible composite resins.",
-      image: "https://images.unsplash.com/photo-1670250721717-889b17349fc4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/images/fill/resin.webp",
       details: [
         {
           title: "Hybrid Composite Resins",
@@ -68,7 +69,7 @@ export default function BondingFillingsPage() {
     {
       tag: "Aftercare Treatment",
       title: "Avoid staining agents, regular checkups.",
-      image: "https://images.unsplash.com/photo-1606811951341-756fdd437682?auto=format&fit=crop&q=80&w=600",
+      image: "/images/fill/avoid.webp",
       details: [
         {
           title: "Maintain Oral Hygiene",
@@ -89,7 +90,7 @@ export default function BondingFillingsPage() {
   return (
     <ServicePageTemplate
       title="Bonding & Filling"
-      heroImage="https://images.unsplash.com/photo-1606811951341-756fdd437682?auto=format&fit=crop&q=80&w=1200"
+      heroImage="/images/fill/main.webp"
       heroAlt="MAMA Dental Clinic Composite Bonding & Fillings"
       cards={cards}
     />

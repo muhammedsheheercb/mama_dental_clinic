@@ -4,15 +4,18 @@ import Image from "next/image";
 
 export default function HomeHero() {
   return (
-    <section className="home-hero-yellow" style={{ width: "100%", maxWidth: "100%" }}>
+    <section
+      className="home-hero-yellow"
+      style={{ width: "100%", maxWidth: "100%" }}
+    >
       {/* Guarantees to load - high quality smiling portrait */}
       <Image
-        src="/images/hero.webp"
+        src="/images/hero1.webp"
         alt="Because Smile Matters - Confident, beautiful smile at MAMA Dental Clinic & Orthodontic Centre"
         fill
         priority
         className="home-hero-bg-image"
-        style={{ objectFit: "cover", objectPosition: "center 15%" }}
+        style={{ objectFit: "cover", objectPosition: "center 25%" }}
         sizes="100vw"
       />
 
@@ -20,10 +23,11 @@ export default function HomeHero() {
       <div className="home-hero-overlay" />
 
       {/* Centered content */}
-      <div className="home-hero-content animate-fade-in-up" style={{ width: "100%", maxWidth: "800px" }}>
-        <h1 className="home-hero-title">
-          Because Smile Matters
-        </h1>
+      <div
+        className="home-hero-content animate-fade-in-up"
+        style={{ width: "100%", maxWidth: "800px" }}
+      >
+        <h1 className="home-hero-title">Because Your Smile Matters</h1>
         <p className="home-hero-subtitle">
           Experience the Next Level of Beauty, Comfort, and Personalized Care
         </p>

@@ -3,7 +3,8 @@ import ServicePageTemplate from "../components/ServicePageTemplate";
 
 export const metadata = {
   title: "Orthodontic Braces in Pazhanji, Kerala | MAMA Dental Clinic",
-  description: "Get high-quality metal, ceramic, or self-ligating braces in Pazhanji, Thrissur at MAMA Dental Clinic. Comprehensive alignment treatments led by Dr. Minu.",
+  description:
+    "Get high-quality metal, ceramic, or self-ligating braces in Pazhanji, Thrissur at MAMA Dental Clinic. Comprehensive alignment treatments led by Dr. Minu.",
 };
 
 export default function BracesPage() {
@@ -11,7 +12,8 @@ export default function BracesPage() {
     {
       tag: "Feature Or Benefits",
       title: "Align your teeth, elevate your smile.",
-      image: "https://images.unsplash.com/photo-1617812191081-2a24e3f30e45?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image:
+        "https://images.unsplash.com/photo-1617812191081-2a24e3f30e45?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       details: [
         {
           title: "Complete Bite & Alignment Correction",
@@ -30,7 +32,7 @@ export default function BracesPage() {
     {
       tag: "Procedure Overview",
       title: "Expert bracket placement and tuning.",
-      image: "https://images.unsplash.com/photo-1676155081516-1b848c9f413e?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/images/braces/expert.webp",
       details: [
         {
           title: "Orthodontic Evaluation",
@@ -49,7 +51,8 @@ export default function BracesPage() {
     {
       tag: "Materials Used",
       title: "High-grade metal, ceramic, and sapphire.",
-      image: "https://images.unsplash.com/photo-1619987614890-4797e713fb03?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image:
+        "https://images.unsplash.com/photo-1619987614890-4797e713fb03?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       details: [
         {
           title: "Stainless Steel & Titanium Brackets",
@@ -68,7 +71,8 @@ export default function BracesPage() {
     {
       tag: "Aftercare Treatment",
       title: "Keep braces clean and healthy.",
-      image: "https://images.unsplash.com/photo-1620775997780-a01e050a9db4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image:
+        "https://images.unsplash.com/photo-1620775997780-a01e050a9db4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       details: [
         {
           title: "Interdental & Specialized Brushing",

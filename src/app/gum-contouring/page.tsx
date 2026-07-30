@@ -3,7 +3,8 @@ import ServicePageTemplate from "../components/ServicePageTemplate";
 
 export const metadata = {
   title: "Laser Gum Contouring in Pazhanji | MAMA Dental Clinic",
-  description: "Correct your gummy smile with advanced, painless laser gum contouring at MAMA Dental Clinic, Pazhanji, Kerala. Enhance symmetry with fast recovery time.",
+  description:
+    "Correct your gummy smile with advanced, painless laser gum contouring at MAMA Dental Clinic, Pazhanji, Kerala. Enhance symmetry with fast recovery time.",
 };
 
 export default function GumContouringPage() {
@@ -11,7 +12,8 @@ export default function GumContouringPage() {
     {
       tag: "Feature Or Benefits",
       title: "Reshape your gumline, balance your smile.",
-      image: "https://images.unsplash.com/photo-1663182234283-28941e7612da?q=80&w=1093&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image:
+        "https://images.unsplash.com/photo-1663182234283-28941e7612da?q=80&w=1093&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       details: [
         {
           title: "Symmetric Gumline Correction",
@@ -30,7 +32,7 @@ export default function GumContouringPage() {
     {
       tag: "Procedure Overview",
       title: "Micro-laser precision, minimal healing time.",
-      image: "https://images.unsplash.com/photo-1664529845836-433c172142ca?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/images/gum/micro.webp",
       details: [
         {
           title: "Mapping the Ideal Gumline",
@@ -49,7 +51,7 @@ export default function GumContouringPage() {
     {
       tag: "Materials Used",
       title: "Advanced soft-tissue dental lasers.",
-      image: "https://images.unsplash.com/photo-1660737216869-ad3d43c36500?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/images/gum/advanced.webp",
       details: [
         {
           title: "Diode Dental Lasers",
@@ -68,7 +70,7 @@ export default function GumContouringPage() {
     {
       tag: "Aftercare Treatment",
       title: "Gentle rinsing and fast recovery.",
-      image: "https://images.unsplash.com/photo-1606811951341-756fdd437682?auto=format&fit=crop&q=80&w=600",
+      image: "/images/gum/gentel.webp",
       details: [
         {
           title: "Warm Salt Water Rinses",
@@ -89,7 +91,7 @@ export default function GumContouringPage() {
   return (
     <ServicePageTemplate
       title="Gum Contouring"
-      heroImage="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&q=80&w=1200"
+      heroImage="/images/gum/main.webp"
       heroAlt="MAMA Dental Clinic Gum Contouring"
       cards={cards}
     />

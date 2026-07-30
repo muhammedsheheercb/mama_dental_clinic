@@ -3,7 +3,8 @@ import ServicePageTemplate from "../components/ServicePageTemplate";
 
 export const metadata = {
   title: "Dental Crowns & Bridges in Pazhanji | MAMA Dental Clinic",
-  description: "Restore damaged or missing teeth with long-lasting porcelain and solid zirconia crowns and bridges at MAMA Dental Clinic in Pazhanji, Kerala.",
+  description:
+    "Restore damaged or missing teeth with long-lasting porcelain and solid zirconia crowns and bridges at MAMA Dental Clinic in Pazhanji, Kerala.",
 };
 
 export default function CrownsBridgesPage() {
@@ -11,7 +12,8 @@ export default function CrownsBridgesPage() {
     {
       tag: "Feature Or Benefits",
       title: "Restore functionality and natural aesthetics.",
-      image: "https://images.unsplash.com/photo-1590718778567-5ad1d013e5ed?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image:
+        "https://images.unsplash.com/photo-1590718778567-5ad1d013e5ed?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       details: [
         {
           title: "Structural Tooth Protection",
@@ -30,7 +32,8 @@ export default function CrownsBridgesPage() {
     {
       tag: "Procedure Overview",
       title: "Precise dental impressions and custom fitting.",
-      image: "https://images.unsplash.com/photo-1612283105859-6e2585710acd?q=80&w=1524&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image:
+        "https://images.unsplash.com/photo-1612283105859-6e2585710acd?q=80&w=1524&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       details: [
         {
           title: "Tooth Preparation & Shaping",
@@ -49,7 +52,8 @@ export default function CrownsBridgesPage() {
     {
       tag: "Materials Used",
       title: "Premium porcelain and durable zirconia.",
-      image: "https://images.unsplash.com/photo-1660300110666-9ff243d1328a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image:
+        "https://images.unsplash.com/photo-1660300110666-9ff243d1328a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       details: [
         {
           title: "Solid Zirconia Restorations",
@@ -68,7 +72,8 @@ export default function CrownsBridgesPage() {
     {
       tag: "Aftercare Treatment",
       title: "Protect restorations for lifelong durability.",
-      image: "https://images.unsplash.com/photo-1687811159645-2423b8e03333?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image:
+        "https://images.unsplash.com/photo-1687811159645-2423b8e03333?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       details: [
         {
           title: "Flossing Under Bridges",
@@ -89,7 +94,7 @@ export default function CrownsBridgesPage() {
   return (
     <ServicePageTemplate
       title="Crowns & Bridges"
-      heroImage="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&q=80&w=1200"
+      heroImage="/images/crown/main.webp"
       heroAlt="MAMA Dental Clinic Crowns & Bridges"
       cards={cards}
     />

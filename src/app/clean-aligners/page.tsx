@@ -3,7 +3,8 @@ import ServicePageTemplate from "../components/ServicePageTemplate";
 
 export const metadata = {
   title: "Clear Aligners in Pazhanji | Invisible Braces | MAMA Dental Clinic",
-  description: "Straighten your teeth comfortably with virtually invisible clear aligners at MAMA Dental Clinic, Pazhanji. Personalized orthodontic plans by Orthodontist Dr. Minu.",
+  description:
+    "Straighten your teeth comfortably with virtually invisible clear aligners at MAMA Dental Clinic, Pazhanji. Personalized orthodontic plans by Orthodontist Dr. Minu.",
 };
 
 export default function CleanAlignersPage() {
@@ -11,7 +12,8 @@ export default function CleanAlignersPage() {
     {
       tag: "Feature Or Benefits",
       title: "Invisible, comfortable, and removable alignment.",
-      image: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&q=80&w=600",
+      image:
+        "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&q=80&w=600",
       details: [
         {
           title: "Invisible Correction",
@@ -30,7 +32,8 @@ export default function CleanAlignersPage() {
     {
       tag: "Procedure Overview",
       title: "3D digital scans and custom aligner sets.",
-      image: "https://images.unsplash.com/photo-1562332328-13fe756de51a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image:
+        "https://images.unsplash.com/photo-1562332328-13fe756de51a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       details: [
         {
           title: "Intraoral 3D Scan",
@@ -49,7 +52,7 @@ export default function CleanAlignersPage() {
     {
       tag: "Materials Used",
       title: "Medical-grade, BPA-free clear thermoplastics.",
-      image: "https://images.unsplash.com/photo-1648140918963-2ca0169dd521?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/images/aligner/medical.webp",
       details: [
         {
           title: "BPA-Free Medical Polyurethane",
@@ -68,7 +71,7 @@ export default function CleanAlignersPage() {
     {
       tag: "Aftercare Treatment",
       title: "Simple daily washing and retainer care.",
-      image: "https://images.unsplash.com/photo-1598531228433-d9f0cb960816?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/images/aligner/clean.webp",
       details: [
         {
           title: "Clean Aligners Daily",

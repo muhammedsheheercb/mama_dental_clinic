@@ -3,7 +3,8 @@ import ServicePageTemplate from "../components/ServicePageTemplate";
 
 export const metadata = {
   title: "Dental Veneers in Pazhanji | MAMA Dental Clinic & Orthodontic Centre",
-  description: "Transform your smile with premium porcelain veneers in Pazhanji, Kerala at MAMA Dental Clinic. Custom IPS e.max cosmetic veneers designed for a flawless natural look.",
+  description:
+    "Transform your smile with premium porcelain veneers in Pazhanji, Kerala at MAMA Dental Clinic. Custom IPS e.max cosmetic veneers designed for a flawless natural look.",
 };
 
 export default function VeneersPage() {
@@ -11,7 +12,7 @@ export default function VeneersPage() {
     {
       tag: "Feature Or Benefits",
       title: "A perfect smile, instantly yours.",
-      image: "https://images.unsplash.com/photo-1611695434369-a8f5d76ceb7b?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/images/veneers/smile.webp",
       details: [
         {
           title: "Instant Smile Transformation",
@@ -30,7 +31,7 @@ export default function VeneersPage() {
     {
       tag: "Procedure Overview",
       title: "Simple steps to stunning results.",
-      image: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&q=80&w=600",
+      image: "/images/veneers/simple.webp",
       details: [
         {
           title: "Consultation & Smile Design",
@@ -49,7 +50,7 @@ export default function VeneersPage() {
     {
       tag: "Materials Used",
       title: "Premium materials, natural perfection.",
-      image: "https://images.unsplash.com/photo-1739902526173-06750b78cfb7?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/images/veneers/premium.webp",
       details: [
         {
           title: "IPS e.max Lithium Disilicate",
@@ -68,7 +69,7 @@ export default function VeneersPage() {
     {
       tag: "Aftercare Treatment",
       title: "Maintain beauty with easy care.",
-      image: "https://images.unsplash.com/photo-1667133295315-820bb6481730?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/images/veneers/maintain.webp",
       details: [
         {
           title: "Daily Flossing & Brushing",
@@ -89,7 +90,7 @@ export default function VeneersPage() {
   return (
     <ServicePageTemplate
       title="Veneers"
-      heroImage="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      heroImage="/images/veneers/main.webp"
       heroAlt="MAMA Dental Clinic Veneers Shade Matching"
       cards={cards}
     />
