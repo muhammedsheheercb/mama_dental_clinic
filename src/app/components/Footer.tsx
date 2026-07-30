@@ -22,6 +22,9 @@ export default function Footer() {
     { name: "Teeth Whitening", href: "/teeth-whitening" },
     { name: "Gum Contouring", href: "/gum-contouring" },
     { name: "Bonding and Filling", href: "/bonding-fillings" },
+    { name: "Pediatric Dentistry", href: "/pediatric-dentistry" },
+    { name: "Dental Implants", href: "/dental-implants" },
+    { name: "Smile Design", href: "/smile-design" },
   ];
 
   return (
@@ -52,7 +55,7 @@ export default function Footer() {
               </Link>
               
               <p style={{ margin: "4px 0 0 0", color: "#495057", fontSize: "0.95rem", fontWeight: "500" }}>
-                Because Smile Matters
+                Because Your Smile Matters
               </p>
             </div>
 

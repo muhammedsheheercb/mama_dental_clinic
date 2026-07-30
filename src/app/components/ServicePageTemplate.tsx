@@ -74,7 +74,7 @@ export default function ServicePageTemplate({
                 {title}
               </h1>
               <p className="service-page-slogan" style={{ fontSize: "1.1rem", fontWeight: "600", color: "#495057", margin: 0, letterSpacing: "0.05em", textTransform: "uppercase" }}>
-                Because Smile Matters
+                Because Your Smile Matters
               </p>
             </div>
 
@@ -281,9 +281,6 @@ export default function ServicePageTemplate({
 
             {/* Modal Titles */}
             <div style={{ marginBottom: "32px", paddingRight: "40px" }}>
-              <p style={{ fontSize: "1.1rem", fontWeight: "600", color: "#64748b", margin: "0 0 4px 0" }}>
-                Straighten Your Smile Without The Metal.
-              </p>
               <h2 style={{ fontSize: "2.2rem", fontWeight: "800", color: "#1e3a44", margin: 0, fontFamily: "var(--font-serif)" }}>
                 {cards[activeCardIdx].tag}
               </h2>
