@@ -177,7 +177,7 @@ export default function HomeServices() {
               style={{ borderRadius: 0, position: "relative" }}
             >
               <Image
-                src="https://images.unsplash.com/photo-1684607633080-df59e6874367?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="/images/teeth.webp"
                 alt="Patient undergoing laser teeth whitening cosmetology treatment"
                 fill
                 className="home-hero-bg-image"
@@ -210,7 +210,7 @@ export default function HomeServices() {
               style={{ borderRadius: 0, position: "relative" }}
             >
               <Image
-                src="/images/gum/main.webp"
+                src="/images/gum.webp"
                 alt="Patient smile exhibiting healthy gum shapes and borders"
                 fill
                 className="home-hero-bg-image"
@@ -240,7 +240,7 @@ export default function HomeServices() {
               style={{ borderRadius: 0, position: "relative" }}
             >
               <Image
-                src="/images/fill/main.webp"
+                src="/images/fill.webp"
                 alt="Composite resin dental restoration for bonding"
                 fill
                 className="home-hero-bg-image"
@@ -255,6 +255,102 @@ export default function HomeServices() {
                 </p>
                 <div className="service-banner-buttons">
                   <Link href="/bonding-fillings" className="btn-banner-outline">
+                    Learn More
+                  </Link>
+                  <Link href="/contact" className="btn-pill-blue">
+                    Book Now
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Row 5: Pediatric Dentistry, Dental Implants & Smile Design */}
+          <div className="service-banner-triple">
+            {/* Pediatric Dentistry */}
+            <div
+              className="service-banner-half"
+              style={{ borderRadius: 0, position: "relative" }}
+            >
+              <Image
+                src="/images/pediatric/1.webp"
+                alt="Child-friendly pediatric dentistry at MAMA Dental Clinic"
+                fill
+                className="home-hero-bg-image"
+                style={{ objectFit: "cover" }}
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+              <div className="service-banner-overlay-dark" />
+              <div className="service-banner-content-center">
+                <h3 className="service-banner-title">Pediatric Dentistry</h3>
+                <p className="service-banner-subtitle">
+                  Gentle Care for Growing Smiles
+                </p>
+                <div className="service-banner-buttons">
+                  <Link
+                    href="/pediatric-dentistry"
+                    className="btn-banner-outline"
+                  >
+                    Learn More
+                  </Link>
+                  <Link href="/contact" className="btn-pill-blue">
+                    Book Now
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Dental Implants */}
+            <div
+              className="service-banner-half"
+              style={{ borderRadius: 0, position: "relative" }}
+            >
+              <Image
+                src="/images/implants/1.webp"
+                alt="Dental implant consultation and treatment planning"
+                fill
+                className="home-hero-bg-image"
+                style={{ objectFit: "cover" }}
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+              <div className="service-banner-overlay-dark" />
+              <div className="service-banner-content-center">
+                <h3 className="service-banner-title">Dental Implants</h3>
+                <p className="service-banner-subtitle">
+                  Strong Foundations. Natural Results
+                </p>
+                <div className="service-banner-buttons">
+                  <Link href="/dental-implants" className="btn-banner-outline">
+                    Learn More
+                  </Link>
+                  <Link href="/contact" className="btn-pill-blue">
+                    Book Now
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Smile Design */}
+            <div
+              className="service-banner-half"
+              style={{ borderRadius: 0, position: "relative" }}
+            >
+              <Image
+                src="/images/smile/1.webp"
+                alt="Digital smile design consultation"
+                fill
+                className="home-hero-bg-image"
+                style={{ objectFit: "cover" }}
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+              <div className="service-banner-overlay-dark" />
+              <div className="service-banner-content-center">
+                <h3 className="service-banner-title">Smile Design</h3>
+                <p className="service-banner-subtitle">
+                  Plan Your Most Confident Smile
+                </p>
+                <div className="service-banner-buttons">
+                  <Link href="/smile-design" className="btn-banner-outline">
                     Learn More
                   </Link>
                   <Link href="/contact" className="btn-pill-blue">

@@ -1652,6 +1652,12 @@ button, input, select, textarea {
   gap: 24px;
 }
 
+.service-banner-triple {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
 .service-banner-overlay-dark {
   position: absolute;
   top: 0;
@@ -1794,6 +1800,9 @@ button, input, select, textarea {
 
 @media (max-width: 768px) {
   .service-banner-half-split {
+    grid-template-columns: 1fr;
+  }
+  .service-banner-triple {
     grid-template-columns: 1fr;
   }
   .clinic-gallery-showcase {
@@ -2025,8 +2034,17 @@ button, input, select, textarea {
   gap: 6px;
 }
 
+.service-banner-triple {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
 @media (max-width: 768px) {
   .service-banner-half-split {
+    grid-template-columns: 1fr !important;
+  }
+  .service-banner-triple {
     grid-template-columns: 1fr !important;
   }
   
@@ -2729,5 +2747,4 @@ button, input, select, textarea {
     padding: 28px 20px;
   }
 }
-
 
