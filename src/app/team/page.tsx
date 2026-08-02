@@ -1,13 +1,21 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { GraduationCap, Award, Stethoscope, Briefcase, User, Check } from "lucide-react";
+import {
+  GraduationCap,
+  Award,
+  Stethoscope,
+  Briefcase,
+  User,
+  Check,
+} from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export const metadata = {
   title: "Meet Our Team | MAMA Dental Clinic & Orthodontic Centre",
-  description: "Meet the professional dentists and specialists at MAMA Dental Clinic in Pazhanji, Kerala. Led by Chief Orthodontist Dr. Minu C. Mathews, our team includes prosthodontists, endodontists, pediatric dentists, oral surgeons, and periodontists.",
+  description:
+    "Meet the professional dentists and specialists at MAMA Dental Clinic in Pazhanji, Kerala. Led by Chief Orthodontist Dr. Minu C. Mathews, our team includes prosthodontists, endodontists, pediatric dentists, oral surgeons, and periodontists.",
 };
 
 interface TeamMember {
@@ -30,20 +38,35 @@ export default function TeamPage() {
       id: 1,
       name: "Dr. Minu C. Mathews",
       role: "Chief Dental Surgeon & Managing Director",
-      education: "BDS, MDS (Orthodontics and Dentofacial Orthopedics)",
-      college: "Christian Dental College, Ludhiana; Malabar Dental College (KUHS)",
+      education: "BDS, MDS (Orthodontist and Aligner Specialist)",
+      college:
+        "Christian Dental College, Ludhiana; Malabar Dental College (KUHS)",
       image: "/images/team/1.webp",
       bio: "Dr. Minu C. Mathews is an accomplished Specialist Orthodontist with over 10 years of clinical experience. She currently serves as the Chief Dental Surgeon and Managing Director at MAMA Dental Clinic and Orthodontic Centre. As an official Invisalign® Provider and specialist in Cosmetic Smile Designing & Veneering, she combines high-end aesthetic dental care with advanced orthodontic techniques to design seamless, natural-looking, and confident smiles.",
       areasOfExpertise: [
         "Cosmetic Dentistry & Smile Designing: Porcelain and composite veneers, cosmetic smile designing, crowns & bridges, aesthetic restorations",
         "Clear Aligners & Orthodontics: Invisalign®, clear aligner therapy, self-ligating brackets, MARPE, orthopedic and jaw discrepancy corrections",
         "Surgical & Advanced Procedures: Surgical extractions, surgery-assisted orthodontics, implant-supported orthodontics, impacted canines",
-        "Preventive & Pediatric Care: Early growth modification, serial extractions, preventive orthodontics"
+        "Preventive & Pediatric Care: Early growth modification, serial extractions, preventive orthodontics",
       ],
-      certifications: ["Official Invisalign® Provider"]
+      certifications: ["Official Invisalign® Provider"],
     },
     {
       id: 2,
+      name: "Dr. Shilpa Elsa George",
+      role: "Specialist Prosthodontist & Implantologist",
+      education: "MDS (Prosthodontics, Crown & Bridge), BDS",
+      college: "Christian Dental College, Ludhiana",
+      image: "/images/team/8.webp",
+      bio: "Dr. Shilpa Elsa George is a highly skilled Prosthodontist specializing in restorative, cosmetic, and implant dentistry. An alumnus of Christian Dental College, Ludhiana, she is dedicated to restoring patient smiles with precision, function, and natural aesthetics.",
+      areasOfExpertise: [
+        "Cosmetic Dentistry: Smile design and porcelain veneers",
+        "Prosthetics: Complete dentures, crowns & bridges",
+        "Implant Restorations: Teeth and implant-supported overdentures",
+      ],
+    },
+    {
+      id: 3,
       name: "Dr. Bhoomika P.C.",
       role: "Specialist Oral & Maxillofacial Surgeon",
       education: "MDS (Oral & Maxillofacial Surgery)",
@@ -54,12 +77,15 @@ export default function TeamPage() {
         "Minor Surgical Procedures: Impacted wisdom teeth, complex extractions, pre-prosthetic surgeries",
         "Surgical Oral Pathology: Cyst enucleation, biopsy procedures, soft tissue lesion excisions",
         "Trauma & Emergency Care: Minor maxillofacial trauma, facial lacerations, dental injuries",
-        "Pre-Orthodontic & Aesthetic Surgeries: Frenectomies, surgical exposure of impacted teeth, alveoloplasty"
+        "Pre-Orthodontic & Aesthetic Surgeries: Frenectomies, surgical exposure of impacted teeth, alveoloplasty",
       ],
-      achievements: ["Assistant Professor in the Department of Oral & Maxillofacial Surgery at Royal Dental College", "Committed to evidence-based practice, surgical safety protocols, and compassionate patient care"]
+      achievements: [
+        "Assistant Professor in the Department of Oral & Maxillofacial Surgery at Royal Dental College",
+        "Committed to evidence-based practice, surgical safety protocols, and compassionate patient care",
+      ],
     },
     {
-      id: 3,
+      id: 4,
       name: "Dr. Meenu Prasannan",
       role: "Specialist Pediatric Dentist",
       education: "MDS (Pediatric & Preventive Dentistry)",
@@ -71,22 +97,35 @@ export default function TeamPage() {
         "Sleep Dentistry & Sedation: Conscious Sedation and General Anesthesia",
         "Full Mouth Rehabilitation for Special Needs: Single-visit rehabilitation under General Anesthesia",
         "Preventive & Pediatric Treatments: Sealants, fluoride therapies, space maintainers, pulpectomies, pediatric crowns",
-        "Laser Dentistry & Minor Surgeries: Minimally invasive laser procedures and minor oral surgery"
+        "Laser Dentistry & Minor Surgeries: Minimally invasive laser procedures and minor oral surgery",
       ],
-      certifications: ["Trained provider in Conscious Sedation and General Anesthesia"],
-      achievements: ["Gold Medalist (First Rank) in MDS – Kerala University of Health Sciences (KUHS)", "Published researcher in PubMed-indexed international and national journals", "Award-winning presenter at State and National Pediatric Dentistry Conferences"]
-    },
-    {
-      id: 4,
-      name: "Dr. Akhil Thomas",
-      role: "Endodontics",
-      education: "Endodontics",
-      college: "PSM Dental College",
-      image: "/images/team/4.webp",
-      areasOfExpertise: ["Root Canal Treatment", "Apexification"]
+      certifications: [
+        "Trained provider in Conscious Sedation and General Anesthesia",
+      ],
+      achievements: [
+        "Gold Medalist (First Rank) in MDS – Kerala University of Health Sciences (KUHS)",
+        "Published researcher in PubMed-indexed international and national journals",
+        "Award-winning presenter at State and National Pediatric Dentistry Conferences",
+      ],
     },
     {
       id: 5,
+      name: "Dr. Akhil Thomas",
+      role: "Specialist Endodontist & Root Canal Specialist",
+      education: "BDS, MDS (Endodontics & Conservative Dentistry)",
+      college:
+        "BDS – SJM Dental College; MDS – Divya Jyoti Dental College; Clinical stint – PSM Dental College",
+      image: "/images/team/4.webp",
+      bio: "Dr. Akhil Thomas is a highly skilled Specialist Endodontist dedicated to preserving natural teeth through advanced micro-endodontic and restorative care. With extensive expertise in pain-free root canal therapies and complex endodontic procedures, he ensures every patient receives top-tier treatment with maximum comfort.",
+      areasOfExpertise: [
+        "Advanced Root Canal Therapy: Single-sitting and painless root canals, re-treatment of failed root canals, and rotary endodontics",
+        "Pediatric & Regenerative Endodontics: Apexification, apexogenesis, and vital pulp therapies for young permanent teeth",
+        "Endodontic Surgeries: Periapical surgeries, apicoectomy, and management of dental trauma and fractured teeth",
+        "Restorative & Aesthetic Dentistry: Post & core restorations, crown preparation, and aesthetic composite tooth rebuilding",
+      ],
+    },
+    {
+      id: 6,
       name: "Dr. Girish B. Viswanathan",
       role: "Prosthodontist & Senior Specialist Implantologist",
       education: "MDS in Prosthodontics & Implantology; BDS",
@@ -97,23 +136,32 @@ export default function TeamPage() {
         "Advanced Dental Implantology: Single and multiple tooth implants, immediate loading implants, All-on-4 and All-on-6",
         "Complex Surgical Procedures: Zygomatic, Pterygoid, and Transnasal implants",
         "Guided Surgery & Bone Protocols: 3D CBCT guided surgery, bone grafting, sinus lifts, ridge augmentation, immediate extraction placements",
-        "Prosthodontics & Rehabilitation: Zirconia and ceramic crowns & bridges, overdentures, full-mouth reconstructions"
+        "Prosthodontics & Rehabilitation: Zirconia and ceramic crowns & bridges, overdentures, full-mouth reconstructions",
       ],
-      certifications: ["Advanced Zygomatic Implantology Training – Noris Medical", "Certified in Guided Implant Surgery and Digital Workflows – Straumann & Glidewell Laboratories"]
+      certifications: [
+        "Advanced Zygomatic Implantology Training – Noris Medical",
+        "Certified in Guided Implant Surgery and Digital Workflows – Straumann & Glidewell Laboratories",
+      ],
     },
     {
-      id: 6,
+      id: 7,
       name: "Dr. Nithya R Krishnan",
       role: "Specialist Periodontist & Implantologist",
       education: "MDS (Periodontics & Implantology), BDS",
       college: "Coorg Institute of Dental Sciences",
       image: "/images/team/6.webp",
       bio: "Backed by 13 years of clinical practice and 8 years of specialized expertise, Dr. Nithya R Krishnan is an expert Periodontist and Implantologist. She has successfully performed over 500 advanced periodontal surgeries, laser treatments, and implant procedures.",
-      areasOfExpertise: ["Implantology: Dental implants and Nobel Biocare restorations", "Advanced Gum Care: Laser-assisted periodontal treatments", "Surgical Expertise: Advanced periodontal and plastic surgeries"],
-      certifications: ["Advanced certification in Implant Dentistry from Nobel Biocare"]
+      areasOfExpertise: [
+        "Implantology: Dental implants and Nobel Biocare restorations",
+        "Advanced Gum Care: Laser-assisted periodontal treatments",
+        "Surgical Expertise: Advanced periodontal and plastic surgeries",
+      ],
+      certifications: [
+        "Advanced certification in Implant Dentistry from Nobel Biocare",
+      ],
     },
     {
-      id: 7,
+      id: 8,
       name: "Dr. Anjali Sreedharan",
       role: "Consultant Periodontist & Dental Surgeon",
       education: "MDS (Periodontics & Oral Implantology)",
@@ -124,45 +172,67 @@ export default function TeamPage() {
         "Advanced Periodontal Care: Bleeding gums, bad breath, severe gum infections and periodontitis",
         "Laser & Flap Surgery: Minimally invasive gum rejuvenation and therapy",
         "Cosmetic Gum Contouring: Aesthetic reshaping for gummy smiles and uneven gum lines",
-        "Preventive & Routine Dentistry: Scaling, deep cleaning, and oral hygiene instruction"
+        "Preventive & Routine Dentistry: Scaling, deep cleaning, and oral hygiene instruction",
       ],
-      achievements: ["Published researcher with multiple scientific awards in Periodontics"]
+      achievements: [
+        "Published researcher with multiple scientific awards in Periodontics",
+      ],
     },
-    {
-      id: 8,
-      name: "Dr. Shilpa Elsa George",
-      role: "Specialist Prosthodontist & Implantologist",
-      education: "MDS (Prosthodontics, Crown & Bridge), BDS",
-      college: "Christian Dental College, Ludhiana",
-      image: "/images/team/8.webp",
-      bio: "Dr. Shilpa Elsa George is a highly skilled Prosthodontist specializing in restorative, cosmetic, and implant dentistry. An alumnus of Christian Dental College, Ludhiana, she is dedicated to restoring patient smiles with precision, function, and natural aesthetics.",
-      areasOfExpertise: [
-        "Cosmetic Dentistry: Smile design and porcelain veneers",
-        "Prosthetics: Complete dentures, crowns & bridges",
-        "Implant Restorations: Teeth and implant-supported overdentures"
-      ]
-    }
   ];
 
   return (
     <>
       <Header />
 
-      <main style={{ flex: 1, width: "100%", maxWidth: "100%", overflowX: "hidden", backgroundColor: "#ffffff" }}>
-
+      <main
+        style={{
+          flex: 1,
+          width: "100%",
+          maxWidth: "100%",
+          overflowX: "hidden",
+          backgroundColor: "#ffffff",
+        }}
+      >
         {/* Hero Banner Section */}
-        <section className="team-hero-section" style={{ padding: "120px 0 50px 0", backgroundColor: "#ffffff" }}>
+        <section
+          className="team-hero-section"
+          style={{ padding: "120px 0 50px 0", backgroundColor: "#ffffff" }}
+        >
           <div className="container">
-            <div className="section-title-wrapper" style={{ marginBottom: "50px" }}>
+            <div
+              className="section-title-wrapper"
+              style={{ marginBottom: "50px" }}
+            >
               <div className="subtitle-badge">
                 <User size={16} />
                 <span>Our Specialists</span>
               </div>
-              <h1 className="section-title" style={{ fontSize: "3.2rem", fontWeight: "800", color: "#0f4c5c", margin: "0 0 16px 0", letterSpacing: "-0.02em" }}>
+              <h1
+                className="section-title"
+                style={{
+                  fontSize: "3.2rem",
+                  fontWeight: "800",
+                  color: "#0f4c5c",
+                  margin: "0 0 16px 0",
+                  letterSpacing: "-0.02em",
+                }}
+              >
                 Meet Our <span>Expert Team</span>
               </h1>
-              <p className="section-description" style={{ color: "#475569", fontSize: "1.125rem", maxWidth: "720px", margin: "0 auto", lineHeight: "1.6" }}>
-                At MAMA Dental Clinic & Orthodontic Centre, we bring together highly qualified and experienced dental specialists across all major disciplines. We are committed to rendering the highest standard of ethical, advanced, and personalized dental care.
+              <p
+                className="section-description"
+                style={{
+                  color: "#475569",
+                  fontSize: "1.125rem",
+                  maxWidth: "720px",
+                  margin: "0 auto",
+                  lineHeight: "1.6",
+                }}
+              >
+                At MAMA Dental Clinic & Orthodontic Centre, we bring together
+                highly qualified and experienced dental specialists across all
+                major disciplines. We are committed to rendering the highest
+                standard of ethical, advanced, and personalized dental care.
               </p>
             </div>
           </div>
@@ -240,22 +310,29 @@ export default function TeamPage() {
         </section> */}
 
         {/* Specialists Grid Section */}
-        <section style={{ padding: "80px 0 100px 0", backgroundColor: "#f7f9fa" }}>
+        <section
+          style={{ padding: "80px 0 100px 0", backgroundColor: "#f7f9fa" }}
+        >
           <div className="container">
-
-            <div className="section-title-wrapper" style={{ marginBottom: "50px" }}>
+            <div
+              className="section-title-wrapper"
+              style={{ marginBottom: "50px" }}
+            >
               <h2 className="section-title" style={{ fontSize: "2.4rem" }}>
                 Our Clinical <span>Specialists</span>
               </h2>
-              <p className="section-description" style={{ fontSize: "1.05rem" }}>
-                Collaborating to offer specialized dental expertise under one roof, ensuring complete care for you and your family.
+              <p
+                className="section-description"
+                style={{ fontSize: "1.05rem" }}
+              >
+                Collaborating to offer specialized dental expertise under one
+                roof, ensuring complete care for you and your family.
               </p>
             </div>
 
             <div className="team-grid">
               {specialists.map((doctor) => (
                 <div key={doctor.id} className="team-page-specialist-card">
-
                   {/* Avatar */}
                   <div className="team-page-specialist-avatar">
                     <Image
@@ -269,40 +346,131 @@ export default function TeamPage() {
 
                   {/* Name, Title & Qualifications */}
                   <div className="team-page-specialist-info">
-                    <h3 style={{ fontSize: "1.45rem", color: "var(--primary)", fontWeight: "800", margin: "0 0 4px 0" }}>
+                    <h3
+                      style={{
+                        fontSize: "1.45rem",
+                        color: "var(--primary)",
+                        fontWeight: "800",
+                        margin: "0 0 4px 0",
+                      }}
+                    >
                       {doctor.name}
                     </h3>
-                    <span style={{ color: "var(--secondary)", fontSize: "0.825rem", fontWeight: "700", textTransform: "uppercase", letterSpacing: "0.05em", display: "block", marginBottom: "12px" }}>
+                    <span
+                      style={{
+                        color: "var(--secondary)",
+                        fontSize: "0.825rem",
+                        fontWeight: "700",
+                        textTransform: "uppercase",
+                        letterSpacing: "0.05em",
+                        display: "block",
+                        marginBottom: "12px",
+                      }}
+                    >
                       {doctor.role}
                     </span>
 
-                    <div style={{ display: "flex", gap: "6px", alignItems: "flex-start", justifyContent: "center", fontSize: "0.85rem", color: "#475569", textAlign: "center" }}>
-                      <GraduationCap size={16} style={{ color: "var(--primary)", flexShrink: 0, marginTop: "2px" }} />
+                    <div
+                      style={{
+                        display: "flex",
+                        gap: "6px",
+                        alignItems: "flex-start",
+                        justifyContent: "center",
+                        fontSize: "0.85rem",
+                        color: "#475569",
+                        textAlign: "center",
+                      }}
+                    >
+                      <GraduationCap
+                        size={16}
+                        style={{
+                          color: "var(--primary)",
+                          flexShrink: 0,
+                          marginTop: "2px",
+                        }}
+                      />
                       <span>
                         {doctor.education}
-                        {doctor.college && <span style={{ display: "block", fontSize: "0.775rem", fontStyle: "italic", marginTop: "2px" }}>{doctor.college}</span>}
+                        {doctor.college && (
+                          <span
+                            style={{
+                              display: "block",
+                              fontSize: "0.775rem",
+                              fontStyle: "italic",
+                              marginTop: "2px",
+                            }}
+                          >
+                            {doctor.college}
+                          </span>
+                        )}
                       </span>
                     </div>
                   </div>
 
                   {/* Body Content */}
                   <div className="team-page-specialist-details">
-
                     {doctor.bio && (
-                      <p style={{ fontSize: "0.875rem", color: "#475569", lineHeight: "1.6", margin: 0 }}>
+                      <p
+                        style={{
+                          fontSize: "0.875rem",
+                          color: "#475569",
+                          lineHeight: "1.6",
+                          margin: 0,
+                        }}
+                      >
                         {doctor.bio}
                       </p>
                     )}
 
                     {/* Areas of Expertise */}
-                    <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-                      <span style={{ fontSize: "0.85rem", fontWeight: "700", color: "var(--primary)", display: "flex", alignItems: "center", gap: "6px" }}>
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "8px",
+                      }}
+                    >
+                      <span
+                        style={{
+                          fontSize: "0.85rem",
+                          fontWeight: "700",
+                          color: "var(--primary)",
+                          display: "flex",
+                          alignItems: "center",
+                          gap: "6px",
+                        }}
+                      >
                         <Stethoscope size={14} /> Areas of Expertise:
                       </span>
-                      <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "6px" }}>
+                      <ul
+                        style={{
+                          listStyle: "none",
+                          padding: 0,
+                          margin: 0,
+                          display: "flex",
+                          flexDirection: "column",
+                          gap: "6px",
+                        }}
+                      >
                         {doctor.areasOfExpertise.map((area, i) => (
-                          <li key={i} style={{ display: "flex", gap: "8px", alignItems: "flex-start", fontSize: "0.85rem", color: "#334155" }}>
-                            <Check size={14} style={{ color: "var(--secondary)", flexShrink: 0, marginTop: "3px" }} />
+                          <li
+                            key={i}
+                            style={{
+                              display: "flex",
+                              gap: "8px",
+                              alignItems: "flex-start",
+                              fontSize: "0.85rem",
+                              color: "#334155",
+                            }}
+                          >
+                            <Check
+                              size={14}
+                              style={{
+                                color: "var(--secondary)",
+                                flexShrink: 0,
+                                marginTop: "3px",
+                              }}
+                            />
                             <span>{area}</span>
                           </li>
                         ))}
@@ -310,31 +478,111 @@ export default function TeamPage() {
                     </div>
 
                     {/* Certifications (Special for Dr Meenu) */}
-                    {doctor.certifications && doctor.certifications.length > 0 && (
-                      <div style={{ display: "flex", flexDirection: "column", gap: "6px", borderTop: "1px solid #e2e8f0", paddingTop: "12px" }}>
-                        <span style={{ fontSize: "0.85rem", fontWeight: "700", color: "var(--primary)", display: "flex", alignItems: "center", gap: "6px" }}>
-                          <Award size={14} /> Certifications:
-                        </span>
-                        <div style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
-                          {doctor.certifications.map((cert, i) => (
-                            <span key={i} style={{ fontSize: "0.8rem", color: "#1e293b", backgroundColor: "#e2e8f0", padding: "4px 10px", borderRadius: "4px", fontWeight: "500" }}>
-                              {cert}
-                            </span>
-                          ))}
+                    {doctor.certifications &&
+                      doctor.certifications.length > 0 && (
+                        <div
+                          style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            gap: "6px",
+                            borderTop: "1px solid #e2e8f0",
+                            paddingTop: "12px",
+                          }}
+                        >
+                          <span
+                            style={{
+                              fontSize: "0.85rem",
+                              fontWeight: "700",
+                              color: "var(--primary)",
+                              display: "flex",
+                              alignItems: "center",
+                              gap: "6px",
+                            }}
+                          >
+                            <Award size={14} /> Certifications:
+                          </span>
+                          <div
+                            style={{
+                              display: "flex",
+                              flexWrap: "wrap",
+                              gap: "6px",
+                            }}
+                          >
+                            {doctor.certifications.map((cert, i) => (
+                              <span
+                                key={i}
+                                style={{
+                                  fontSize: "0.8rem",
+                                  color: "#1e293b",
+                                  backgroundColor: "#e2e8f0",
+                                  padding: "4px 10px",
+                                  borderRadius: "4px",
+                                  fontWeight: "500",
+                                }}
+                              >
+                                {cert}
+                              </span>
+                            ))}
+                          </div>
                         </div>
-                      </div>
-                    )}
+                      )}
 
                     {/* Achievements (Special for Dr Meenu & Dr Anjali) */}
                     {doctor.achievements && doctor.achievements.length > 0 && (
-                      <div style={{ display: "flex", flexDirection: "column", gap: "6px", borderTop: "1px solid #e2e8f0", paddingTop: "12px" }}>
-                        <span style={{ fontSize: "0.85rem", fontWeight: "700", color: "var(--primary)", display: "flex", alignItems: "center", gap: "6px" }}>
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          gap: "6px",
+                          borderTop: "1px solid #e2e8f0",
+                          paddingTop: "12px",
+                        }}
+                      >
+                        <span
+                          style={{
+                            fontSize: "0.85rem",
+                            fontWeight: "700",
+                            color: "var(--primary)",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "6px",
+                          }}
+                        >
                           <Award size={14} /> Key Achievements:
                         </span>
-                        <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "6px" }}>
+                        <ul
+                          style={{
+                            listStyle: "none",
+                            padding: 0,
+                            margin: 0,
+                            display: "flex",
+                            flexDirection: "column",
+                            gap: "6px",
+                          }}
+                        >
                           {doctor.achievements.map((ach, i) => (
-                            <li key={i} style={{ display: "flex", gap: "8px", alignItems: "flex-start", fontSize: "0.8rem", color: "#475569", lineHeight: "1.4" }}>
-                              <span style={{ color: "var(--accent)", fontWeight: "bold", fontSize: "1rem", lineHeight: "1", flexShrink: 0 }}>★</span>
+                            <li
+                              key={i}
+                              style={{
+                                display: "flex",
+                                gap: "8px",
+                                alignItems: "flex-start",
+                                fontSize: "0.8rem",
+                                color: "#475569",
+                                lineHeight: "1.4",
+                              }}
+                            >
+                              <span
+                                style={{
+                                  color: "var(--accent)",
+                                  fontWeight: "bold",
+                                  fontSize: "1rem",
+                                  lineHeight: "1",
+                                  flexShrink: 0,
+                                }}
+                              >
+                                ★
+                              </span>
                               <span>{ach}</span>
                             </li>
                           ))}
@@ -344,21 +592,63 @@ export default function TeamPage() {
 
                     {/* Experience (Special for Dr Anjali) */}
                     {doctor.experience && doctor.experience.length > 0 && (
-                      <div style={{ display: "flex", flexDirection: "column", gap: "6px", borderTop: "1px solid #e2e8f0", paddingTop: "12px" }}>
-                        <span style={{ fontSize: "0.85rem", fontWeight: "700", color: "var(--primary)", display: "flex", alignItems: "center", gap: "6px" }}>
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          gap: "6px",
+                          borderTop: "1px solid #e2e8f0",
+                          paddingTop: "12px",
+                        }}
+                      >
+                        <span
+                          style={{
+                            fontSize: "0.85rem",
+                            fontWeight: "700",
+                            color: "var(--primary)",
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "6px",
+                          }}
+                        >
                           <Briefcase size={14} /> Consultant Experience:
                         </span>
-                        <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "6px" }}>
+                        <ul
+                          style={{
+                            listStyle: "none",
+                            padding: 0,
+                            margin: 0,
+                            display: "flex",
+                            flexDirection: "column",
+                            gap: "6px",
+                          }}
+                        >
                           {doctor.experience.map((exp, i) => (
-                            <li key={i} style={{ display: "flex", gap: "6px", alignItems: "center", fontSize: "0.8rem", color: "#475569" }}>
-                              <span style={{ width: "4px", height: "4px", backgroundColor: "var(--primary)", borderRadius: "50%", flexShrink: 0 }} />
+                            <li
+                              key={i}
+                              style={{
+                                display: "flex",
+                                gap: "6px",
+                                alignItems: "center",
+                                fontSize: "0.8rem",
+                                color: "#475569",
+                              }}
+                            >
+                              <span
+                                style={{
+                                  width: "4px",
+                                  height: "4px",
+                                  backgroundColor: "var(--primary)",
+                                  borderRadius: "50%",
+                                  flexShrink: 0,
+                                }}
+                              />
                               <span>{exp}</span>
                             </li>
                           ))}
                         </ul>
                       </div>
                     )}
-
                   </div>
                 </div>
               ))}
@@ -380,15 +670,42 @@ export default function TeamPage() {
                 gridTemplateColumns: "1.2fr 1fr",
                 alignItems: "center",
                 boxShadow: "0 15px 35px rgba(0, 172, 238, 0.2)",
-                position: "relative"
+                position: "relative",
               }}
             >
-              <div style={{ padding: "60px", display: "flex", flexDirection: "column", gap: "28px", zIndex: 2 }}>
-                <h2 style={{ fontSize: "3rem", fontWeight: "800", color: "#ffffff", lineHeight: "1.2", margin: 0, fontFamily: "var(--font-serif)" }}>
+              <div
+                style={{
+                  padding: "60px",
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "28px",
+                  zIndex: 2,
+                }}
+              >
+                <h2
+                  style={{
+                    fontSize: "3rem",
+                    fontWeight: "800",
+                    color: "#ffffff",
+                    lineHeight: "1.2",
+                    margin: 0,
+                    fontFamily: "var(--font-serif)",
+                  }}
+                >
                   Ready to Consult Our Specialists?
                 </h2>
-                <p style={{ color: "#ffffff", fontSize: "1.1rem", opacity: 0.9, margin: 0, maxWidth: "520px" }}>
-                  Schedule your consultation today and experience world-class, comfortable dental care tailormade for you by Pazhanji&apos;s leading specialists.
+                <p
+                  style={{
+                    color: "#ffffff",
+                    fontSize: "1.1rem",
+                    opacity: 0.9,
+                    margin: 0,
+                    maxWidth: "520px",
+                  }}
+                >
+                  Schedule your consultation today and experience world-class,
+                  comfortable dental care tailormade for you by Pazhanji&apos;s
+                  leading specialists.
                 </p>
                 <div>
                   <Link
@@ -407,7 +724,7 @@ export default function TeamPage() {
                       boxShadow: "0 8px 20px rgba(0, 0, 0, 0.08)",
                       border: "none",
                       cursor: "pointer",
-                      transition: "all 0.3s ease"
+                      transition: "all 0.3s ease",
                     }}
                   >
                     Book Appointment
@@ -415,7 +732,17 @@ export default function TeamPage() {
                 </div>
               </div>
 
-              <div style={{ position: "relative", width: "100%", height: "100%", minHeight: "360px", display: "flex", justifyContent: "flex-end", overflow: "hidden" }}>
+              <div
+                style={{
+                  position: "relative",
+                  width: "100%",
+                  height: "100%",
+                  minHeight: "360px",
+                  display: "flex",
+                  justifyContent: "flex-end",
+                  overflow: "hidden",
+                }}
+              >
                 <Image
                   src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800"
                   alt="MAMA Dental Clinic Advanced Treatment Room"
@@ -427,7 +754,6 @@ export default function TeamPage() {
             </div>
           </div>
         </section>
-
       </main>
 
       <Footer />
