@@ -32,8 +32,7 @@ export default function CrownsBridgesPage() {
     {
       tag: "Procedure Overview",
       title: "Precise dental impressions and custom fitting.",
-      image:
-        "https://images.unsplash.com/photo-1612283105859-6e2585710acd?q=80&w=1524&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/images/crown/1.webp",
       details: [
         {
           title: "Tooth Preparation & Shaping",

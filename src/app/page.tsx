@@ -12,9 +12,15 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main style={{ flex: 1, width: "100%", maxWidth: "100%", overflowX: "hidden" }}>
+      <main
+        style={{
+          flex: 1,
+          width: "100%",
+          maxWidth: "100%",
+          overflowX: "hidden",
+        }}
+      >
         <HomeHero />
-        <HomeStudent />
         <HomeServices />
         <HomeStrengths />
         <HomeTestimonials />
