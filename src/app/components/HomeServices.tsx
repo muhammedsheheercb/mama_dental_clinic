@@ -44,14 +44,14 @@ export default function HomeServices() {
             maxWidth: "100%",
           }}
         >
-          {/* Row 1: Veneers - Full Width */}
+          {/* Row 1: Smile Design - Full Width */}
           <div
             className="service-banner-full"
             style={{ borderRadius: 0, position: "relative" }}
           >
             <Image
-              src="/images/veneers/main.webp"
-              alt="MAMA Dental Veneers matching shade selector tool"
+              src="/images/smile/1.webp"
+              alt="Digital smile design consultation"
               fill
               priority
               className="home-hero-bg-image"
@@ -60,12 +60,12 @@ export default function HomeServices() {
             />
             <div className="service-banner-overlay-dark" />
             <div className="service-banner-content-center">
-              <h3 className="service-banner-title">Veneers</h3>
+              <h3 className="service-banner-title">Smile Design</h3>
               <p className="service-banner-subtitle">
-                Enhanced with Next-Gen Technology
+                Plan Your Most Confident Smile
               </p>
               <div className="service-banner-buttons">
-                <Link href="/veneers" className="btn-banner-outline">
+                <Link href="/smile-design" className="btn-banner-outline">
                   Learn More
                 </Link>
                 <Link href="/contact" className="btn-pill-blue">
@@ -75,7 +75,7 @@ export default function HomeServices() {
             </div>
           </div>
 
-          {/* Row 2: Clear Aligners & Braces - 50/50 Split */}
+          {/* Row 2: Clear Aligners & Veneers - 50/50 Split */}
           <div className="service-banner-half-split">
             {/* Clear Aligners */}
             <div
@@ -107,14 +107,14 @@ export default function HomeServices() {
               </div>
             </div>
 
-            {/* Braces */}
+            {/* Veneers */}
             <div
               className="service-banner-half"
               style={{ borderRadius: 0, position: "relative" }}
             >
               <Image
-                src="https://images.unsplash.com/photo-1720685193964-4529228a33c1?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Smiling patient wearing aesthetic bracket braces"
+                src="/images/veneers/main.webp"
+                alt="MAMA Dental Veneers matching shade selector tool"
                 fill
                 className="home-hero-bg-image"
                 style={{ objectFit: "cover" }}
@@ -122,12 +122,12 @@ export default function HomeServices() {
               />
               <div className="service-banner-overlay-dark" />
               <div className="service-banner-content-center">
-                <h3 className="service-banner-title">Braces</h3>
+                <h3 className="service-banner-title">Veneers</h3>
                 <p className="service-banner-subtitle">
-                  Metal. Ceramic. Clear. Hidden
+                  Enhanced with Next-Gen Technology
                 </p>
                 <div className="service-banner-buttons">
-                  <Link href="/braces" className="btn-banner-outline">
+                  <Link href="/veneers" className="btn-banner-outline">
                     Learn More
                   </Link>
                   <Link href="/contact" className="btn-pill-blue">
@@ -138,7 +138,49 @@ export default function HomeServices() {
             </div>
           </div>
 
-          {/* Row 3: Crowns and Bridges & Teeth Whitening - 50/50 Split */}
+          {/* Row 3: Dental Implants - Full Width */}
+          <div className="service-banner-full" style={{ borderRadius: 0, position: "relative" }}>
+            <Image src="/images/implants/1.webp" alt="Dental implant consultation and treatment planning" fill className="home-hero-bg-image" style={{ objectFit: "cover" }} sizes="100vw" />
+            <div className="service-banner-overlay-dark" />
+            <div className="service-banner-content-center">
+              <h3 className="service-banner-title">Dental Implants</h3>
+              <p className="service-banner-subtitle">Strong Foundations. Natural Results</p>
+              <div className="service-banner-buttons">
+                <Link href="/dental-implants" className="btn-banner-outline">Learn More</Link>
+                <Link href="/contact" className="btn-pill-blue">Book Now</Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Row 4: Dental Jewellery & Braces - 50/50 Split */}
+          <div className="service-banner-half-split">
+            <div className="service-banner-half" style={{ borderRadius: 0, position: "relative" }}>
+              <Image src="/images/dental/1.webp" alt="Dental jewellery smile enhancement" fill className="home-hero-bg-image" style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 50vw" />
+              <div className="service-banner-overlay-dark" />
+              <div className="service-banner-content-center">
+                <h3 className="service-banner-title">Dental Jewellery</h3>
+                <p className="service-banner-subtitle">A Subtle Sparkle for Your Smile</p>
+                <div className="service-banner-buttons">
+                  <Link href="/dental-jewellery" className="btn-banner-outline">Learn More</Link>
+                  <Link href="/contact" className="btn-pill-blue">Book Now</Link>
+                </div>
+              </div>
+            </div>
+            <div className="service-banner-half" style={{ borderRadius: 0, position: "relative" }}>
+              <Image src="https://images.unsplash.com/photo-1720685193964-4529228a33c1?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Smiling patient wearing aesthetic bracket braces" fill className="home-hero-bg-image" style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 50vw" />
+              <div className="service-banner-overlay-dark" />
+              <div className="service-banner-content-center">
+                <h3 className="service-banner-title">Braces</h3>
+                <p className="service-banner-subtitle">Metal. Ceramic. Clear. Hidden</p>
+                <div className="service-banner-buttons">
+                  <Link href="/braces" className="btn-banner-outline">Learn More</Link>
+                  <Link href="/contact" className="btn-pill-blue">Book Now</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Row 5: Crowns and Bridges & Teeth Whitening - 50/50 Split */}
           <div className="service-banner-half-split">
             {/* Crowns and Bridges */}
             <div
@@ -202,7 +244,7 @@ export default function HomeServices() {
             </div>
           </div>
 
-          {/* Row 4: Gum Contouring & Bonding and Fillings - 50/50 Split */}
+          {/* Row 6: Gum Contouring & Bonding and Fillings - 50/50 Split */}
           <div className="service-banner-half-split">
             {/* Gum Contouring */}
             <div
@@ -265,11 +307,11 @@ export default function HomeServices() {
             </div>
           </div>
 
-          {/* Row 5: Pediatric Dentistry, Dental Implants & Smile Design */}
-          <div className="service-banner-triple">
+          {/* Row 7: Pediatric Dentistry */}
+          <div className="service-banner-full">
             {/* Pediatric Dentistry */}
             <div
-              className="service-banner-half"
+              className="service-banner-full"
               style={{ borderRadius: 0, position: "relative" }}
             >
               <Image
@@ -300,65 +342,6 @@ export default function HomeServices() {
               </div>
             </div>
 
-            {/* Dental Implants */}
-            <div
-              className="service-banner-half"
-              style={{ borderRadius: 0, position: "relative" }}
-            >
-              <Image
-                src="/images/implants/1.webp"
-                alt="Dental implant consultation and treatment planning"
-                fill
-                className="home-hero-bg-image"
-                style={{ objectFit: "cover" }}
-                sizes="(max-width: 768px) 100vw, 33vw"
-              />
-              <div className="service-banner-overlay-dark" />
-              <div className="service-banner-content-center">
-                <h3 className="service-banner-title">Dental Implants</h3>
-                <p className="service-banner-subtitle">
-                  Strong Foundations. Natural Results
-                </p>
-                <div className="service-banner-buttons">
-                  <Link href="/dental-implants" className="btn-banner-outline">
-                    Learn More
-                  </Link>
-                  <Link href="/contact" className="btn-pill-blue">
-                    Book Now
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* Smile Design */}
-            <div
-              className="service-banner-half"
-              style={{ borderRadius: 0, position: "relative" }}
-            >
-              <Image
-                src="/images/smile/1.webp"
-                alt="Digital smile design consultation"
-                fill
-                className="home-hero-bg-image"
-                style={{ objectFit: "cover" }}
-                sizes="(max-width: 768px) 100vw, 33vw"
-              />
-              <div className="service-banner-overlay-dark" />
-              <div className="service-banner-content-center">
-                <h3 className="service-banner-title">Smile Design</h3>
-                <p className="service-banner-subtitle">
-                  Plan Your Most Confident Smile
-                </p>
-                <div className="service-banner-buttons">
-                  <Link href="/smile-design" className="btn-banner-outline">
-                    Learn More
-                  </Link>
-                  <Link href="/contact" className="btn-pill-blue">
-                    Book Now
-                  </Link>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

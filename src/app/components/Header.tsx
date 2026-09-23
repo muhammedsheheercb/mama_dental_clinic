@@ -35,6 +35,7 @@ export default function Header() {
     { name: "Pediatric Dentistry", href: "/pediatric-dentistry" },
     { name: "Dental Implants", href: "/dental-implants" },
     { name: "Smile Design", href: "/smile-design" },
+    { name: "Dental Jewellery", href: "/dental-jewellery" },
   ];
 
   return (
