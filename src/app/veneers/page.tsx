@@ -5,6 +5,8 @@ export const metadata = {
   title: "Dental Veneers in Pazhanji | MAMA Dental Clinic & Orthodontic Centre",
   description:
     "Transform your smile with premium porcelain veneers in Pazhanji, Kerala at MAMA Dental Clinic. Custom IPS e.max cosmetic veneers designed for a flawless natural look.",
+  alternates: { canonical: "/services/veneers" },
+  robots: { index: false, follow: true },
 };
 
 export default function VeneersPage() {

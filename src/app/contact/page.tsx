@@ -3,11 +3,9 @@ import Image from "next/image";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { pageMetadata } from "../seo";
 
-export const metadata = {
-  title: "Contact Us | Book Appointment | MAMA Dental Clinic Pazhanji",
-  description: "Contact MAMA Dental Clinic & Orthodontic Centre in Pazhanji, Kerala. Call us at +91 90480 54405 or message us on WhatsApp to book your consultation.",
-};
+export const metadata = pageMetadata({ title: "Contact MAMA Dental Clinic | Pazhanji, Thrissur", description: "Contact MAMA Dental Clinic & Orthodontic Centre in Pazhanji, Thrissur. Call +91 90480 54405 or use WhatsApp to book a consultation.", path: "/contact" });
 
 export default function ContactPage() {
   return (
@@ -88,6 +86,16 @@ export default function ContactPage() {
                         <p style={{ fontSize: "0.95rem", color: "#64748b", margin: 0 }}>
                           <a href="tel:+919048054405" style={{ color: "#64748b", textDecoration: "none" }}>+91 90480 54405</a>
                         </p>
+                      </div>
+                    </div>
+
+                    <div style={{ display: "flex", alignItems: "flex-start", gap: "16px" }}>
+                      <div style={{ backgroundColor: "#f0fdf4", color: "#00acee", padding: "10px", borderRadius: "12px" }}>
+                        <Phone size={20} />
+                      </div>
+                      <div>
+                        <h4 style={{ fontSize: "0.95rem", fontWeight: "700", color: "#1e293b", margin: "0 0 4px 0" }}>WhatsApp</h4>
+                        <p style={{ fontSize: "0.95rem", color: "#64748b", margin: 0 }}><a href="https://wa.me/919048054405" target="_blank" rel="noopener noreferrer" style={{ color: "#64748b", textDecoration: "none" }}>Message us on WhatsApp</a></p>
                       </div>
                     </div>
 

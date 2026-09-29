@@ -5,6 +5,8 @@ export const metadata = {
   title: "Clear Aligners in Pazhanji | Invisible Braces | MAMA Dental Clinic",
   description:
     "Straighten your teeth comfortably with virtually invisible clear aligners at MAMA Dental Clinic, Pazhanji. Personalized orthodontic plans by Orthodontist Dr. Minu.",
+  alternates: { canonical: "/services/clear-aligners" },
+  robots: { index: false, follow: true },
 };
 
 export default function CleanAlignersPage() {

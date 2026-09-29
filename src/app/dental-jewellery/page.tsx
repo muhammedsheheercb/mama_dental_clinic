@@ -5,6 +5,8 @@ export const metadata = {
   title: "Dental Jewellery in Pazhanji | MAMA Dental Clinic",
   description:
     "Add a refined sparkle to your smile with professionally applied dental jewellery at MAMA Dental Clinic in Pazhanji, Kerala.",
+  alternates: { canonical: "/services/dental-jewellery" },
+  robots: { index: false, follow: true },
 };
 
 export default function DentalJewelleryPage() {

@@ -5,6 +5,8 @@ export const metadata = {
   title: "Dental Implants in Pazhanji | MAMA Dental Clinic",
   description:
     "Restore missing teeth with comfortable, natural-looking dental implants at MAMA Dental Clinic in Pazhanji, Kerala.",
+  alternates: { canonical: "/services/dental-implants" },
+  robots: { index: false, follow: true },
 };
 
 export default function DentalImplantsPage() {

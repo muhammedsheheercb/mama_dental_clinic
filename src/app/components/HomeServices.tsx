@@ -65,7 +65,7 @@ export default function HomeServices() {
                 Plan Your Most Confident Smile
               </p>
               <div className="service-banner-buttons">
-                <Link href="/smile-design" className="btn-banner-outline">
+                <Link href="/services/smile-design" className="btn-banner-outline">
                   Learn More
                 </Link>
                 <Link href="/contact" className="btn-pill-blue">
@@ -97,7 +97,7 @@ export default function HomeServices() {
                   Invisible. Precise. Perfect Fit
                 </p>
                 <div className="service-banner-buttons">
-                  <Link href="/clean-aligners" className="btn-banner-outline">
+                  <Link href="/services/clear-aligners" className="btn-banner-outline">
                     Learn More
                   </Link>
                   <Link href="/contact" className="btn-pill-blue">
@@ -127,7 +127,7 @@ export default function HomeServices() {
                   Enhanced with Next-Gen Technology
                 </p>
                 <div className="service-banner-buttons">
-                  <Link href="/veneers" className="btn-banner-outline">
+                  <Link href="/services/veneers" className="btn-banner-outline">
                     Learn More
                   </Link>
                   <Link href="/contact" className="btn-pill-blue">
@@ -146,7 +146,7 @@ export default function HomeServices() {
               <h3 className="service-banner-title">Dental Implants</h3>
               <p className="service-banner-subtitle">Strong Foundations. Natural Results</p>
               <div className="service-banner-buttons">
-                <Link href="/dental-implants" className="btn-banner-outline">Learn More</Link>
+                <Link href="/services/dental-implants" className="btn-banner-outline">Learn More</Link>
                 <Link href="/contact" className="btn-pill-blue">Book Now</Link>
               </div>
             </div>
@@ -161,7 +161,7 @@ export default function HomeServices() {
                 <h3 className="service-banner-title">Dental Jewellery</h3>
                 <p className="service-banner-subtitle">A Subtle Sparkle for Your Smile</p>
                 <div className="service-banner-buttons">
-                  <Link href="/dental-jewellery" className="btn-banner-outline">Learn More</Link>
+                  <Link href="/services/dental-jewellery" className="btn-banner-outline">Learn More</Link>
                   <Link href="/contact" className="btn-pill-blue">Book Now</Link>
                 </div>
               </div>

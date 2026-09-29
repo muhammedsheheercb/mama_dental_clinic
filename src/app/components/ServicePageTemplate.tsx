@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Heart, Landmark, UserCheck, Feather, ArrowUpRight, X } from "lucide-react";
 import Header from "./Header";
 import HomeCTA from "./HomeCTA";
@@ -27,6 +28,14 @@ interface ServicePageProps {
   cards: CardData[];
 }
 
+const serviceGuides: Record<string, { slug: string; overview: string; suitableFor: string; process: string[]; faqs: { question: string; answer: string }[] }> = {
+  "Smile Design": { slug: "smile-design", overview: "Smile design is a personalised approach to improving the appearance and harmony of a smile. It may combine carefully selected cosmetic, restorative, gum or orthodontic treatments after an assessment of your teeth, gums, bite and goals.", suitableFor: "It may help people concerned about tooth shape, colour, small gaps, uneven edges or the overall balance of their smile. A consultation is needed to decide whether any treatment is appropriate.", process: ["Discuss your goals and examine your teeth, gums and bite.", "Collect relevant photographs, scans or records to plan possible changes.", "Review suitable treatment options, timing and aftercare before you decide."], faqs: [{ question: "Is smile design one treatment?", answer: "Not always. It is a plan that can bring together one or more suitable treatments." }, { question: "Can I preview proposed changes?", answer: "Planning records can help explain possible changes before treatment begins." }] },
+  "Clear Aligners": { slug: "clear-aligners", overview: "Clear aligners are removable, custom-made trays that can gradually guide teeth into planned positions. They are an orthodontic option for suitable cases and require consistent wear and review visits.", suitableFor: "They may suit adults and teens who want a discreet, removable orthodontic option. The dentist or orthodontist will assess your bite, teeth and oral health first.", process: ["Assessment, records and a discussion of your goals.", "A digital treatment plan and custom aligner sequence.", "Wear aligners as advised and attend progress reviews; retainers are usually needed after treatment."], faqs: [{ question: "Are clear aligners removable?", answer: "Yes. They are usually removed for meals and oral hygiene, then worn as directed to keep treatment on track." }, { question: "Will I need retainers?", answer: "Retainers are commonly recommended after orthodontic treatment to help maintain the result." }] },
+  "Veneers": { slug: "veneers", overview: "Veneers are thin, custom cosmetic restorations bonded to the front surface of selected teeth. They can be considered for specific concerns with colour, shape, minor spacing or surface appearance.", suitableFor: "Veneers may be an option for healthy teeth with cosmetic concerns. Your dentist will discuss alternatives and whether a conservative approach is suitable for you.", process: ["Examination and discussion of the desired appearance and alternatives.", "Planning, shade selection and any preparation needed for the chosen material.", "Fabrication, fitting and bonding, followed by care guidance and reviews."], faqs: [{ question: "Do veneers require special care?", answer: "They need the same careful brushing, flossing and regular dental reviews as natural teeth." }, { question: "Are veneers right for every smile?", answer: "No. Suitability depends on your teeth, gums, bite and goals, which are assessed during a consultation." }] },
+  "Dental Implants": { slug: "dental-implants", overview: "A dental implant is a carefully placed foundation used to support a replacement tooth, bridge or other restoration. Treatment is planned around your oral health, bone, bite and the number of missing teeth.", suitableFor: "Implants may be considered for one or more missing teeth. A detailed consultation determines whether they are appropriate and whether any preparatory care is needed.", process: ["Assess oral health and take the records needed for treatment planning.", "Place the implant when appropriate and allow the planned healing period.", "Fit a custom restoration and provide ongoing hygiene and review guidance."], faqs: [{ question: "How long does implant treatment take?", answer: "Timing varies with the treatment plan, healing needs and the type of restoration. Your clinician can explain the expected stages." }, { question: "How are implants maintained?", answer: "Daily cleaning and regular professional reviews are important for the long-term health of the implant area." }] },
+  "Dental Jewellery": { slug: "dental-jewellery", overview: "Dental jewellery is a small decorative piece professionally attached to a suitable tooth surface. It is an elective cosmetic choice and should only be placed after the tooth and gums have been assessed.", suitableFor: "It may suit people seeking a subtle, temporary smile accent on a healthy tooth. Placement is not appropriate for every tooth or bite.", process: ["Check the selected tooth and discuss placement and material.", "Clean and prepare the surface using a dental bonding process.", "Place the jewellery precisely and provide aftercare guidance."], faqs: [{ question: "Does dental jewellery involve drilling?", answer: "For suitable cases, it can be bonded without drilling; the dentist will explain the method recommended for you." }, { question: "Can it be removed?", answer: "If you want it removed, ask the dental team to assess and remove it professionally." }] },
+};
+
 export default function ServicePageTemplate({
   title,
   heroImage,
@@ -34,6 +43,8 @@ export default function ServicePageTemplate({
   cards,
 }: ServicePageProps) {
   const [activeCardIdx, setActiveCardIdx] = useState<number | null>(null);
+  const guide = serviceGuides[title];
+  const faqSchema = guide && { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: guide.faqs.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer } })) };
   
   // Custom strengths for "Why MAMA Dental is the Best" (matching Screenshot 3)
   const strengths = [
@@ -62,12 +73,14 @@ export default function ServicePageTemplate({
   return (
     <>
       <Header />
+      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
       
       <main style={{ flex: 1, width: "100%", maxWidth: "100%", overflowX: "hidden", backgroundColor: "#ffffff" }}>
         
         {/* Section 1: Hero Header Block */}
         <section className="service-hero-section" style={{ padding: "120px 0 60px 0" }}>
           <div className="service-container">
+            {guide && <nav aria-label="Breadcrumb" style={{ marginBottom: "24px", fontSize: "0.9rem" }}><Link href="/" style={{ color: "#64748b" }}>Home</Link><span style={{ margin: "0 8px", color: "#94a3b8" }}>›</span><Link href="/services" style={{ color: "#64748b" }}>Services</Link><span style={{ margin: "0 8px", color: "#94a3b8" }}>›</span><span style={{ color: "#1e3a44" }}>{title}</span></nav>}
             {/* Header Title Row */}
             <div className="service-hero-title-row" style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "30px", flexWrap: "wrap", gap: "20px" }}>
               <h1 className="service-page-title" style={{ fontSize: "3.8rem", fontWeight: "800", color: "#1e3a44", margin: 0, fontFamily: "var(--font-serif)", letterSpacing: "-0.02em" }}>
@@ -91,6 +104,13 @@ export default function ServicePageTemplate({
             </div>
           </div>
         </section>
+
+        {guide && <section style={{ padding: "40px 0 70px", backgroundColor: "#f8f9fa" }}>
+          <div className="service-container service-guide-grid" style={{ display: "grid", gridTemplateColumns: "minmax(0, 1.2fr) minmax(0, 0.8fr)", gap: "48px" }}>
+            <div><h2 className="service-section-title" style={{ color: "#1e3a44" }}>Understanding {title}</h2><p style={{ color: "#64748b", lineHeight: 1.75 }}>{guide.overview}</p><h3 style={{ color: "#1e3a44", marginTop: 28 }}>Who may benefit?</h3><p style={{ color: "#64748b", lineHeight: 1.75 }}>{guide.suitableFor}</p><h3 style={{ color: "#1e3a44", marginTop: 28 }}>Your treatment process</h3><ol style={{ color: "#64748b", lineHeight: 1.8, paddingLeft: 22 }}>{guide.process.map((step) => <li key={step}>{step}</li>)}</ol></div>
+            <aside style={{ background: "#fff", borderRadius: 20, padding: 30, alignSelf: "start", border: "1px solid #e9ecef" }}><h2 style={{ color: "#1e3a44", marginTop: 0 }}>Questions about {title}?</h2>{guide.faqs.map((faq) => <div key={faq.question} style={{ marginBottom: 20 }}><h3 style={{ fontSize: "1rem", color: "#1e3a44", marginBottom: 6 }}>{faq.question}</h3><p style={{ color: "#64748b", lineHeight: 1.65, margin: 0 }}>{faq.answer}</p></div>)}<Link href="/contact" className="btn btn-primary" style={{ display: "inline-block", marginTop: 8 }}>Book a consultation</Link></aside>
+          </div>
+        </section>}
 
         {/* Section 2: Get to Know Section (4 Image-Background Cards) */}
         <section className="service-know-section" style={{ padding: "60px 0", backgroundColor: "#ffffff" }}>

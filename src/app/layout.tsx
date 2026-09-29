@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://mamadentalclinic.com"),
   title: {
-    default: "MAMA Dental Clinic & Orthodontic Centre | Pazhanji, Kerala",
+    default: "MAMA Dental Clinic & Orthodontic Centre | Pazhanji, Thrissur",
     template: "%s | MAMA Dental Clinic"
   },
   icons: {
@@ -12,11 +12,10 @@ export const metadata: Metadata = {
     shortcut: "/images/logo.webp",
     apple: "/images/logo.webp",
   },
-  description: "MAMA Dental Clinic and Orthodontic Centre by Orthodontist Dr. Minu offers advanced orthodontic braces, clear aligners, implants & smile design in Pazhanji, Kerala.",
-  keywords: "MAMA Dental Clinic, Dr. Minu, orthodontic treatment, clear aligners, braces, smile correction, cosmetic dentistry, root canal treatment, kids dentistry, oral surgery, dental implants, dentures, dental bridges, digital X-rays, oral scanning, dental clinic Pazhanji, Thrissur Kerala",
+  description: "MAMA Dental Clinic & Orthodontic Centre in Pazhanji, Thrissur offers comprehensive dental and orthodontic care including smile design, clear aligners, veneers and dental implants.",
   authors: [{ name: "MAMA Dental Clinic and Orthodontic Centre" }],
   alternates: {
-    canonical: "./",
+    canonical: "/",
   },
   openGraph: {
     title: "MAMA Dental Clinic & Orthodontic Centre | Pazhanji, Kerala",
@@ -75,7 +74,6 @@ export default function RootLayout({
     "@id": "https://mamadentalclinic.com/#dentist",
     "url": "https://mamadentalclinic.com",
     "telephone": "+919048054405",
-    "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Main Road, Pazhanji",
@@ -83,11 +81,6 @@ export default function RootLayout({
       "addressRegion": "Kerala",
       "postalCode": "680542",
       "addressCountry": "IN"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 10.6865,
-      "longitude": 76.1264
     },
     "openingHoursSpecification": [
       {
@@ -100,19 +93,14 @@ export default function RootLayout({
           "Friday",
           "Saturday"
         ],
-        "opens": "09:30",
-        "closes": "18:30"
+        "opens": "08:00",
+        "closes": "20:00"
       }
     ],
     "sameAs": [
       "https://www.facebook.com/share/1NkR8Fjkc6/",
       "https://www.instagram.com/mamadentalclinic?igsh=MWFrMzJhank2NDBtNw=="
-    ],
-    "founder": {
-      "@type": "Person",
-      "name": "Dr. Minu",
-      "jobTitle": "Orthodontist"
-    }
+    ]
   };
 
   return (

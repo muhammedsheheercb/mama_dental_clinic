@@ -2747,4 +2747,6 @@ button, input, select, textarea {
     padding: 28px 20px;
   }
 }
-
+@media (max-width: 768px) {
+  .service-guide-grid { grid-template-columns: 1fr !important; gap: 28px !important; }
+}

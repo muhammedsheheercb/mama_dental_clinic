@@ -15,17 +15,18 @@ export default function Footer() {
   ];
 
   const serviceLinks = [
-    { name: "Veneers", href: "/veneers" },
-    { name: "Clean Aligners", href: "/clean-aligners" },
+    { name: "All Services", href: "/services" },
+    { name: "Veneers", href: "/services/veneers" },
+    { name: "Clear Aligners", href: "/services/clear-aligners" },
     { name: "Braces", href: "/braces" },
     { name: "Crowns and Bridges", href: "/crowns-bridges" },
     { name: "Teeth Whitening", href: "/teeth-whitening" },
     { name: "Gum Contouring", href: "/gum-contouring" },
     { name: "Bonding and Filling", href: "/bonding-fillings" },
     { name: "Pediatric Dentistry", href: "/pediatric-dentistry" },
-    { name: "Dental Implants", href: "/dental-implants" },
-    { name: "Smile Design", href: "/smile-design" },
-    { name: "Dental Jewellery", href: "/dental-jewellery" },
+    { name: "Dental Implants", href: "/services/dental-implants" },
+    { name: "Smile Design", href: "/services/smile-design" },
+    { name: "Dental Jewellery", href: "/services/dental-jewellery" },
   ];
 
   return (

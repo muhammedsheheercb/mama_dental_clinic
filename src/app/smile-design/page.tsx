@@ -5,6 +5,8 @@ export const metadata = {
   title: "Smile Design in Pazhanji | MAMA Dental Clinic",
   description:
     "Plan a balanced, natural-looking smile with personalized digital smile design at MAMA Dental Clinic in Pazhanji, Kerala.",
+  alternates: { canonical: "/services/smile-design" },
+  robots: { index: false, follow: true },
 };
 
 export default function SmileDesignPage() {

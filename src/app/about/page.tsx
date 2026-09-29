@@ -2,13 +2,9 @@ import React from "react";
 import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { pageMetadata } from "../seo";
 
-export const metadata = {
-  title:
-    "About Us | MAMA Dental Clinic & Orthodontic Centre | Pazhanji, Kerala",
-  description:
-    "Learn more about MAMA Dental Clinic & Orthodontic Centre. Led by Dr. Minu, we offer comprehensive and advanced dental care in Pazhanji, Kerala.",
-};
+export const metadata = pageMetadata({ title: "About MAMA Dental Clinic | Pazhanji, Thrissur", description: "Learn about MAMA Dental Clinic & Orthodontic Centre and its patient-focused dental and orthodontic care in Pazhanji, Thrissur.", path: "/about" });
 
 export default function AboutPage() {
   const stats = [
