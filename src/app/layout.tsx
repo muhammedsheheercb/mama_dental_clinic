@@ -7,11 +7,6 @@ export const metadata: Metadata = {
     default: "MAMA Dental Clinic & Orthodontic Centre | Pazhanji, Thrissur",
     template: "%s | MAMA Dental Clinic"
   },
-  icons: {
-    icon: "/images/logo.webp",
-    shortcut: "/images/logo.webp",
-    apple: "/images/logo.webp",
-  },
   description: "MAMA Dental Clinic & Orthodontic Centre in Pazhanji, Thrissur offers comprehensive dental and orthodontic care including smile design, clear aligners, veneers and dental implants.",
   authors: [{ name: "MAMA Dental Clinic and Orthodontic Centre" }],
   alternates: {
